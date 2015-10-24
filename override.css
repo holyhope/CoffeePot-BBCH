@@ -1,0 +1,3956 @@
+@charset "UTF-8";
+.coffeepot {
+  /*
+  Theme Name: BBCH CoffeePot
+  Theme URI: http://wordpress.org/themes/twentythirteen
+  Author: CoffeePot
+  Author URI: http://coffeepot.fr
+  Description: Simple red and white theme.
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Tags: New York,red,black,white
+  Text Domain: coffeepot_bbch
+  
+  This theme, like WordPress, is licensed under the GPL.
+  Use it to make something cool, have fun, and share what you've learned with others.
+  */
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */ }
+  .coffeepot html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  .coffeepot body {
+    margin: 0; }
+  .coffeepot article,
+  .coffeepot aside,
+  .coffeepot details,
+  .coffeepot figcaption,
+  .coffeepot figure,
+  .coffeepot footer,
+  .coffeepot header,
+  .coffeepot hgroup,
+  .coffeepot main,
+  .coffeepot menu,
+  .coffeepot nav,
+  .coffeepot section,
+  .coffeepot summary {
+    display: block; }
+  .coffeepot audio,
+  .coffeepot canvas,
+  .coffeepot progress,
+  .coffeepot video {
+    display: inline-block;
+    vertical-align: baseline; }
+  .coffeepot audio:not([controls]) {
+    display: none;
+    height: 0; }
+  .coffeepot [hidden],
+  .coffeepot template {
+    display: none; }
+  .coffeepot a {
+    background-color: transparent; }
+  .coffeepot a:active {
+    outline: 0; }
+  .coffeepot a:hover {
+    outline: 0; }
+  .coffeepot abbr[title] {
+    border-bottom: 1px dotted; }
+  .coffeepot b,
+  .coffeepot strong {
+    font-weight: bold; }
+  .coffeepot dfn {
+    font-style: italic; }
+  .coffeepot h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+  .coffeepot mark {
+    background: #ff0;
+    color: #000; }
+  .coffeepot small {
+    font-size: 80%; }
+  .coffeepot sub,
+  .coffeepot sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  .coffeepot sup {
+    top: -0.5em; }
+  .coffeepot sub {
+    bottom: -0.25em; }
+  .coffeepot img {
+    border: 0; }
+  .coffeepot svg:not(:root) {
+    overflow: hidden; }
+  .coffeepot figure {
+    margin: 1em 40px; }
+  .coffeepot hr {
+    box-sizing: content-box;
+    height: 0; }
+  .coffeepot pre {
+    overflow: auto; }
+  .coffeepot code,
+  .coffeepot kbd,
+  .coffeepot pre,
+  .coffeepot samp {
+    font-family: monospace, monospace;
+    font-size: 1em; }
+  .coffeepot button,
+  .coffeepot input,
+  .coffeepot optgroup,
+  .coffeepot select,
+  .coffeepot textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0; }
+  .coffeepot button {
+    overflow: visible; }
+  .coffeepot button,
+  .coffeepot select {
+    text-transform: none; }
+  .coffeepot button,
+  .coffeepot html input[type="button"],
+  .coffeepot input[type="reset"],
+  .coffeepot input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer; }
+  .coffeepot button[disabled],
+  .coffeepot html input[disabled] {
+    cursor: default; }
+  .coffeepot button::-moz-focus-inner,
+  .coffeepot input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .coffeepot input {
+    line-height: normal; }
+  .coffeepot input[type="checkbox"],
+  .coffeepot input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0; }
+  .coffeepot input[type="number"]::-webkit-inner-spin-button,
+  .coffeepot input[type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  .coffeepot input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box; }
+  .coffeepot input[type="search"]::-webkit-search-cancel-button,
+  .coffeepot input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  .coffeepot fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+  .coffeepot legend {
+    border: 0;
+    padding: 0; }
+  .coffeepot textarea {
+    overflow: auto; }
+  .coffeepot optgroup {
+    font-weight: bold; }
+  .coffeepot table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .coffeepot td,
+  .coffeepot th {
+    padding: 0; }
+  @media print {
+    .coffeepot *,
+    .coffeepot *:before,
+    .coffeepot *:after {
+      text-shadow: none !important;
+      box-shadow: none !important; }
+    .coffeepot a,
+    .coffeepot a:visited {
+      text-decoration: underline; }
+    .coffeepot abbr[title]:after {
+      content: " (" attr(title) ")"; }
+    .coffeepot pre,
+    .coffeepot blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid; }
+    .coffeepot thead {
+      display: table-header-group; }
+    .coffeepot tr,
+    .coffeepot img {
+      page-break-inside: avoid; }
+    .coffeepot img {
+      max-width: 100% !important; }
+    .coffeepot p,
+    .coffeepot h2,
+    .coffeepot h3 {
+      orphans: 3;
+      widows: 3; }
+    .coffeepot h2,
+    .coffeepot h3 {
+      page-break-after: avoid; }
+    .coffeepot .navbar {
+      display: none; }
+    .coffeepot .btn > .caret,
+    .coffeepot .dropup > .btn > .caret {
+      border-top-color: #000 !important; }
+    .coffeepot .label {
+      border: 1px solid #000; }
+    .coffeepot .table {
+      border-collapse: collapse !important; }
+      .coffeepot .table td,
+      .coffeepot .table th {
+        background-color: #fff !important; }
+    .coffeepot .table-bordered th,
+    .coffeepot .table-bordered td {
+      border: 1px solid #ddd !important; } }
+  .coffeepot html {
+    box-sizing: border-box; }
+  .coffeepot *,
+  .coffeepot *:before,
+  .coffeepot *:after {
+    box-sizing: inherit; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@-webkit-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+  .coffeepot html {
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent; }
+  .coffeepot body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #373a3c;
+    background-color: #fff; }
+  .coffeepot h1, .coffeepot h2, .coffeepot h3, .coffeepot h4, .coffeepot h5, .coffeepot h6 {
+    margin-top: 0;
+    margin-bottom: .5rem; }
+  .coffeepot p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  .coffeepot abbr[title],
+  .coffeepot abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #818a91; }
+  .coffeepot address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit; }
+  .coffeepot ol,
+  .coffeepot ul,
+  .coffeepot dl {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  .coffeepot ol ol,
+  .coffeepot ul ul,
+  .coffeepot ol ul,
+  .coffeepot ul ol {
+    margin-bottom: 0; }
+  .coffeepot dt {
+    font-weight: bold; }
+  .coffeepot dd {
+    margin-bottom: .5rem;
+    margin-left: 0; }
+  .coffeepot blockquote {
+    margin: 0 0 1rem; }
+  .coffeepot a {
+    color: #0275d8;
+    text-decoration: none; }
+    .coffeepot a:focus, .coffeepot a:hover {
+      color: #014c8c;
+      text-decoration: underline; }
+    .coffeepot a:focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+  .coffeepot pre {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  .coffeepot figure {
+    margin: 0 0 1rem; }
+  .coffeepot img {
+    vertical-align: middle; }
+  .coffeepot [role="button"] {
+    cursor: pointer; }
+  .coffeepot table {
+    background-color: transparent; }
+  .coffeepot caption {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #818a91;
+    text-align: left;
+    caption-side: bottom; }
+  .coffeepot th {
+    text-align: left; }
+  .coffeepot label {
+    display: inline-block;
+    margin-bottom: .5rem; }
+  .coffeepot input,
+  .coffeepot button,
+  .coffeepot select,
+  .coffeepot textarea {
+    margin: 0;
+    line-height: inherit; }
+  .coffeepot textarea {
+    resize: vertical; }
+  .coffeepot fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  .coffeepot legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit; }
+  .coffeepot input[type="search"] {
+    -webkit-appearance: none; }
+  .coffeepot output {
+    display: inline-block; }
+  .coffeepot h1, .coffeepot h2, .coffeepot h3, .coffeepot h4, .coffeepot h5, .coffeepot h6,
+  .coffeepot .h1, .coffeepot .h2, .coffeepot .h3, .coffeepot .h4, .coffeepot .h5, .coffeepot .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit; }
+  .coffeepot h1, .coffeepot .h1,
+  .coffeepot h2, .coffeepot .h2,
+  .coffeepot h3, .coffeepot .h3 {
+    margin-bottom: 0.5rem; }
+  .coffeepot h4, .coffeepot .h4,
+  .coffeepot h5, .coffeepot .h5,
+  .coffeepot h6, .coffeepot .h6 {
+    margin-bottom: 0.5rem; }
+  .coffeepot h1, .coffeepot .h1 {
+    font-size: 2.5rem; }
+  .coffeepot h2, .coffeepot .h2 {
+    font-size: 2rem; }
+  .coffeepot h3, .coffeepot .h3 {
+    font-size: 1.75rem; }
+  .coffeepot h4, .coffeepot .h4 {
+    font-size: 1.5rem; }
+  .coffeepot h5, .coffeepot .h5 {
+    font-size: 1.25rem; }
+  .coffeepot h6, .coffeepot .h6 {
+    font-size: 1rem; }
+  .coffeepot .lead {
+    font-size: 1.25rem;
+    font-weight: 300; }
+  .coffeepot .display-1 {
+    font-size: 3.5rem;
+    font-weight: 300; }
+  .coffeepot .display-2 {
+    font-size: 4.5rem;
+    font-weight: 300; }
+  .coffeepot .display-3 {
+    font-size: 5.5rem;
+    font-weight: 300; }
+  .coffeepot .display-4 {
+    font-size: 6rem;
+    font-weight: 300; }
+  .coffeepot hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1); }
+  .coffeepot small,
+  .coffeepot .small {
+    font-size: 80%;
+    font-weight: normal; }
+  .coffeepot mark,
+  .coffeepot .mark {
+    padding: .2em;
+    background-color: #fcf8e3; }
+  .coffeepot .list-unstyled {
+    padding-left: 0;
+    list-style: none; }
+  .coffeepot .list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none; }
+    .coffeepot .list-inline > li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px; }
+  .coffeepot .dl-horizontal {
+    margin-right: -1.875rem;
+    margin-left: -1.875rem; }
+    .coffeepot .dl-horizontal:before, .coffeepot .dl-horizontal:after {
+      content: " ";
+      display: table; }
+    .coffeepot .dl-horizontal:after {
+      clear: both; }
+  .coffeepot .initialism {
+    font-size: 90%;
+    text-transform: uppercase; }
+  .coffeepot .blockquote {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border-left: 0.25rem solid #eceeef; }
+    .coffeepot .blockquote p:last-child,
+    .coffeepot .blockquote ul:last-child,
+    .coffeepot .blockquote ol:last-child {
+      margin-bottom: 0; }
+    .coffeepot .blockquote footer {
+      display: block;
+      font-size: 80%;
+      line-height: 1.5;
+      color: #818a91; }
+      .coffeepot .blockquote footer:before {
+        content: "\2014 \00A0"; }
+  .coffeepot .blockquote-reverse {
+    padding-right: 1rem;
+    padding-left: 0;
+    text-align: right;
+    border-right: 0.25rem solid #eceeef;
+    border-left: 0; }
+    .coffeepot .blockquote-reverse footer:before {
+      content: ""; }
+    .coffeepot .blockquote-reverse footer:after {
+      content: "\00A0 \2014"; }
+  .coffeepot .figure {
+    display: inline-block; }
+    .coffeepot .figure > img {
+      line-height: 1;
+      margin-bottom: 0.5rem; }
+  .coffeepot .figure-caption {
+    font-size: 90%;
+    color: #818a91; }
+  .coffeepot .img-responsive, .coffeepot .figure > img, .coffeepot .carousel-inner > .carousel-item > img,
+  .coffeepot .carousel-inner > .carousel-item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  .coffeepot .img-rounded {
+    border-radius: 0.3rem; }
+  .coffeepot .img-thumbnail {
+    padding: 0.25rem;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto; }
+  .coffeepot .img-circle {
+    border-radius: 50%; }
+  .coffeepot code,
+  .coffeepot kbd,
+  .coffeepot pre,
+  .coffeepot samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+  .coffeepot code {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #bd4147;
+    background-color: #f7f7f9;
+    border-radius: 0.25rem; }
+  .coffeepot kbd {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 0.2rem; }
+    .coffeepot kbd kbd {
+      padding: 0;
+      font-size: 100%;
+      font-weight: bold; }
+  .coffeepot pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 90%;
+    line-height: 1.5;
+    color: #373a3c; }
+    .coffeepot pre code {
+      padding: 0;
+      font-size: inherit;
+      color: inherit;
+      background-color: transparent;
+      border-radius: 0; }
+  .coffeepot .pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll; }
+  .coffeepot .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+    .coffeepot .container:before, .coffeepot .container:after {
+      content: " ";
+      display: table; }
+    .coffeepot .container:after {
+      clear: both; }
+    @media (min-width: 34em) {
+      .coffeepot .container {
+        max-width: 34rem; } }
+    @media (min-width: 48em) {
+      .coffeepot .container {
+        max-width: 45rem; } }
+    @media (min-width: 62em) {
+      .coffeepot .container {
+        max-width: 60rem; } }
+    @media (min-width: 75em) {
+      .coffeepot .container {
+        max-width: 72.25rem; } }
+  .coffeepot .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+    .coffeepot .container-fluid:before, .coffeepot .container-fluid:after {
+      content: " ";
+      display: table; }
+    .coffeepot .container-fluid:after {
+      clear: both; }
+  .coffeepot .row {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem; }
+    .coffeepot .row:before, .coffeepot .row:after {
+      content: " ";
+      display: table; }
+    .coffeepot .row:after {
+      clear: both; }
+  .coffeepot .col-xs-1, .coffeepot .col-xs-2, .coffeepot .col-xs-3, .coffeepot .col-xs-4, .coffeepot .col-xs-5, .coffeepot .col-xs-6, .coffeepot .col-xs-7, .coffeepot .col-xs-8, .coffeepot .col-xs-9, .coffeepot .col-xs-10, .coffeepot .col-xs-11, .coffeepot .col-xs-12, .coffeepot .col-sm-1, .coffeepot .col-sm-2, .coffeepot .col-sm-3, .coffeepot .col-sm-4, .coffeepot .col-sm-5, .coffeepot .col-sm-6, .coffeepot .col-sm-7, .coffeepot .col-sm-8, .coffeepot .col-sm-9, .coffeepot .col-sm-10, .coffeepot .col-sm-11, .coffeepot .col-sm-12, .coffeepot .col-md-1, .coffeepot .col-md-2, .coffeepot .col-md-3, .coffeepot .col-md-4, .coffeepot .col-md-5, .coffeepot .col-md-6, .coffeepot .col-md-7, .coffeepot .col-md-8, .coffeepot .col-md-9, .coffeepot .col-md-10, .coffeepot .col-md-11, .coffeepot .col-md-12, .coffeepot .col-lg-1, .coffeepot .col-lg-2, .coffeepot .col-lg-3, .coffeepot .col-lg-4, .coffeepot .col-lg-5, .coffeepot .col-lg-6, .coffeepot .col-lg-7, .coffeepot .col-lg-8, .coffeepot .col-lg-9, .coffeepot .col-lg-10, .coffeepot .col-lg-11, .coffeepot .col-lg-12, .coffeepot .col-xl-1, .coffeepot .col-xl-2, .coffeepot .col-xl-3, .coffeepot .col-xl-4, .coffeepot .col-xl-5, .coffeepot .col-xl-6, .coffeepot .col-xl-7, .coffeepot .col-xl-8, .coffeepot .col-xl-9, .coffeepot .col-xl-10, .coffeepot .col-xl-11, .coffeepot .col-xl-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+  .coffeepot .col-xs-1, .coffeepot .col-xs-2, .coffeepot .col-xs-3, .coffeepot .col-xs-4, .coffeepot .col-xs-5, .coffeepot .col-xs-6, .coffeepot .col-xs-7, .coffeepot .col-xs-8, .coffeepot .col-xs-9, .coffeepot .col-xs-10, .coffeepot .col-xs-11, .coffeepot .col-xs-12 {
+    float: left; }
+  .coffeepot .col-xs-1 {
+    width: 8.33333%; }
+  .coffeepot .col-xs-2 {
+    width: 16.66667%; }
+  .coffeepot .col-xs-3 {
+    width: 25%; }
+  .coffeepot .col-xs-4 {
+    width: 33.33333%; }
+  .coffeepot .col-xs-5 {
+    width: 41.66667%; }
+  .coffeepot .col-xs-6 {
+    width: 50%; }
+  .coffeepot .col-xs-7 {
+    width: 58.33333%; }
+  .coffeepot .col-xs-8 {
+    width: 66.66667%; }
+  .coffeepot .col-xs-9 {
+    width: 75%; }
+  .coffeepot .col-xs-10 {
+    width: 83.33333%; }
+  .coffeepot .col-xs-11 {
+    width: 91.66667%; }
+  .coffeepot .col-xs-12 {
+    width: 100%; }
+  .coffeepot .col-xs-pull-0 {
+    right: auto; }
+  .coffeepot .col-xs-pull-1 {
+    right: 8.33333%; }
+  .coffeepot .col-xs-pull-2 {
+    right: 16.66667%; }
+  .coffeepot .col-xs-pull-3 {
+    right: 25%; }
+  .coffeepot .col-xs-pull-4 {
+    right: 33.33333%; }
+  .coffeepot .col-xs-pull-5 {
+    right: 41.66667%; }
+  .coffeepot .col-xs-pull-6 {
+    right: 50%; }
+  .coffeepot .col-xs-pull-7 {
+    right: 58.33333%; }
+  .coffeepot .col-xs-pull-8 {
+    right: 66.66667%; }
+  .coffeepot .col-xs-pull-9 {
+    right: 75%; }
+  .coffeepot .col-xs-pull-10 {
+    right: 83.33333%; }
+  .coffeepot .col-xs-pull-11 {
+    right: 91.66667%; }
+  .coffeepot .col-xs-pull-12 {
+    right: 100%; }
+  .coffeepot .col-xs-push-0 {
+    left: auto; }
+  .coffeepot .col-xs-push-1 {
+    left: 8.33333%; }
+  .coffeepot .col-xs-push-2 {
+    left: 16.66667%; }
+  .coffeepot .col-xs-push-3 {
+    left: 25%; }
+  .coffeepot .col-xs-push-4 {
+    left: 33.33333%; }
+  .coffeepot .col-xs-push-5 {
+    left: 41.66667%; }
+  .coffeepot .col-xs-push-6 {
+    left: 50%; }
+  .coffeepot .col-xs-push-7 {
+    left: 58.33333%; }
+  .coffeepot .col-xs-push-8 {
+    left: 66.66667%; }
+  .coffeepot .col-xs-push-9 {
+    left: 75%; }
+  .coffeepot .col-xs-push-10 {
+    left: 83.33333%; }
+  .coffeepot .col-xs-push-11 {
+    left: 91.66667%; }
+  .coffeepot .col-xs-push-12 {
+    left: 100%; }
+  .coffeepot .col-xs-offset-0 {
+    margin-left: 0%; }
+  .coffeepot .col-xs-offset-1 {
+    margin-left: 8.33333%; }
+  .coffeepot .col-xs-offset-2 {
+    margin-left: 16.66667%; }
+  .coffeepot .col-xs-offset-3 {
+    margin-left: 25%; }
+  .coffeepot .col-xs-offset-4 {
+    margin-left: 33.33333%; }
+  .coffeepot .col-xs-offset-5 {
+    margin-left: 41.66667%; }
+  .coffeepot .col-xs-offset-6 {
+    margin-left: 50%; }
+  .coffeepot .col-xs-offset-7 {
+    margin-left: 58.33333%; }
+  .coffeepot .col-xs-offset-8 {
+    margin-left: 66.66667%; }
+  .coffeepot .col-xs-offset-9 {
+    margin-left: 75%; }
+  .coffeepot .col-xs-offset-10 {
+    margin-left: 83.33333%; }
+  .coffeepot .col-xs-offset-11 {
+    margin-left: 91.66667%; }
+  .coffeepot .col-xs-offset-12 {
+    margin-left: 100%; }
+  @media (min-width: 34em) {
+    .coffeepot .col-sm-1, .coffeepot .col-sm-2, .coffeepot .col-sm-3, .coffeepot .col-sm-4, .coffeepot .col-sm-5, .coffeepot .col-sm-6, .coffeepot .col-sm-7, .coffeepot .col-sm-8, .coffeepot .col-sm-9, .coffeepot .col-sm-10, .coffeepot .col-sm-11, .coffeepot .col-sm-12 {
+      float: left; }
+    .coffeepot .col-sm-1 {
+      width: 8.33333%; }
+    .coffeepot .col-sm-2 {
+      width: 16.66667%; }
+    .coffeepot .col-sm-3 {
+      width: 25%; }
+    .coffeepot .col-sm-4 {
+      width: 33.33333%; }
+    .coffeepot .col-sm-5 {
+      width: 41.66667%; }
+    .coffeepot .col-sm-6 {
+      width: 50%; }
+    .coffeepot .col-sm-7 {
+      width: 58.33333%; }
+    .coffeepot .col-sm-8 {
+      width: 66.66667%; }
+    .coffeepot .col-sm-9 {
+      width: 75%; }
+    .coffeepot .col-sm-10 {
+      width: 83.33333%; }
+    .coffeepot .col-sm-11 {
+      width: 91.66667%; }
+    .coffeepot .col-sm-12 {
+      width: 100%; }
+    .coffeepot .col-sm-pull-0 {
+      right: auto; }
+    .coffeepot .col-sm-pull-1 {
+      right: 8.33333%; }
+    .coffeepot .col-sm-pull-2 {
+      right: 16.66667%; }
+    .coffeepot .col-sm-pull-3 {
+      right: 25%; }
+    .coffeepot .col-sm-pull-4 {
+      right: 33.33333%; }
+    .coffeepot .col-sm-pull-5 {
+      right: 41.66667%; }
+    .coffeepot .col-sm-pull-6 {
+      right: 50%; }
+    .coffeepot .col-sm-pull-7 {
+      right: 58.33333%; }
+    .coffeepot .col-sm-pull-8 {
+      right: 66.66667%; }
+    .coffeepot .col-sm-pull-9 {
+      right: 75%; }
+    .coffeepot .col-sm-pull-10 {
+      right: 83.33333%; }
+    .coffeepot .col-sm-pull-11 {
+      right: 91.66667%; }
+    .coffeepot .col-sm-pull-12 {
+      right: 100%; }
+    .coffeepot .col-sm-push-0 {
+      left: auto; }
+    .coffeepot .col-sm-push-1 {
+      left: 8.33333%; }
+    .coffeepot .col-sm-push-2 {
+      left: 16.66667%; }
+    .coffeepot .col-sm-push-3 {
+      left: 25%; }
+    .coffeepot .col-sm-push-4 {
+      left: 33.33333%; }
+    .coffeepot .col-sm-push-5 {
+      left: 41.66667%; }
+    .coffeepot .col-sm-push-6 {
+      left: 50%; }
+    .coffeepot .col-sm-push-7 {
+      left: 58.33333%; }
+    .coffeepot .col-sm-push-8 {
+      left: 66.66667%; }
+    .coffeepot .col-sm-push-9 {
+      left: 75%; }
+    .coffeepot .col-sm-push-10 {
+      left: 83.33333%; }
+    .coffeepot .col-sm-push-11 {
+      left: 91.66667%; }
+    .coffeepot .col-sm-push-12 {
+      left: 100%; }
+    .coffeepot .col-sm-offset-0 {
+      margin-left: 0%; }
+    .coffeepot .col-sm-offset-1 {
+      margin-left: 8.33333%; }
+    .coffeepot .col-sm-offset-2 {
+      margin-left: 16.66667%; }
+    .coffeepot .col-sm-offset-3 {
+      margin-left: 25%; }
+    .coffeepot .col-sm-offset-4 {
+      margin-left: 33.33333%; }
+    .coffeepot .col-sm-offset-5 {
+      margin-left: 41.66667%; }
+    .coffeepot .col-sm-offset-6 {
+      margin-left: 50%; }
+    .coffeepot .col-sm-offset-7 {
+      margin-left: 58.33333%; }
+    .coffeepot .col-sm-offset-8 {
+      margin-left: 66.66667%; }
+    .coffeepot .col-sm-offset-9 {
+      margin-left: 75%; }
+    .coffeepot .col-sm-offset-10 {
+      margin-left: 83.33333%; }
+    .coffeepot .col-sm-offset-11 {
+      margin-left: 91.66667%; }
+    .coffeepot .col-sm-offset-12 {
+      margin-left: 100%; } }
+  @media (min-width: 48em) {
+    .coffeepot .col-md-1, .coffeepot .col-md-2, .coffeepot .col-md-3, .coffeepot .col-md-4, .coffeepot .col-md-5, .coffeepot .col-md-6, .coffeepot .col-md-7, .coffeepot .col-md-8, .coffeepot .col-md-9, .coffeepot .col-md-10, .coffeepot .col-md-11, .coffeepot .col-md-12 {
+      float: left; }
+    .coffeepot .col-md-1 {
+      width: 8.33333%; }
+    .coffeepot .col-md-2 {
+      width: 16.66667%; }
+    .coffeepot .col-md-3 {
+      width: 25%; }
+    .coffeepot .col-md-4 {
+      width: 33.33333%; }
+    .coffeepot .col-md-5 {
+      width: 41.66667%; }
+    .coffeepot .col-md-6 {
+      width: 50%; }
+    .coffeepot .col-md-7 {
+      width: 58.33333%; }
+    .coffeepot .col-md-8 {
+      width: 66.66667%; }
+    .coffeepot .col-md-9 {
+      width: 75%; }
+    .coffeepot .col-md-10 {
+      width: 83.33333%; }
+    .coffeepot .col-md-11 {
+      width: 91.66667%; }
+    .coffeepot .col-md-12 {
+      width: 100%; }
+    .coffeepot .col-md-pull-0 {
+      right: auto; }
+    .coffeepot .col-md-pull-1 {
+      right: 8.33333%; }
+    .coffeepot .col-md-pull-2 {
+      right: 16.66667%; }
+    .coffeepot .col-md-pull-3 {
+      right: 25%; }
+    .coffeepot .col-md-pull-4 {
+      right: 33.33333%; }
+    .coffeepot .col-md-pull-5 {
+      right: 41.66667%; }
+    .coffeepot .col-md-pull-6 {
+      right: 50%; }
+    .coffeepot .col-md-pull-7 {
+      right: 58.33333%; }
+    .coffeepot .col-md-pull-8 {
+      right: 66.66667%; }
+    .coffeepot .col-md-pull-9 {
+      right: 75%; }
+    .coffeepot .col-md-pull-10 {
+      right: 83.33333%; }
+    .coffeepot .col-md-pull-11 {
+      right: 91.66667%; }
+    .coffeepot .col-md-pull-12 {
+      right: 100%; }
+    .coffeepot .col-md-push-0 {
+      left: auto; }
+    .coffeepot .col-md-push-1 {
+      left: 8.33333%; }
+    .coffeepot .col-md-push-2 {
+      left: 16.66667%; }
+    .coffeepot .col-md-push-3 {
+      left: 25%; }
+    .coffeepot .col-md-push-4 {
+      left: 33.33333%; }
+    .coffeepot .col-md-push-5 {
+      left: 41.66667%; }
+    .coffeepot .col-md-push-6 {
+      left: 50%; }
+    .coffeepot .col-md-push-7 {
+      left: 58.33333%; }
+    .coffeepot .col-md-push-8 {
+      left: 66.66667%; }
+    .coffeepot .col-md-push-9 {
+      left: 75%; }
+    .coffeepot .col-md-push-10 {
+      left: 83.33333%; }
+    .coffeepot .col-md-push-11 {
+      left: 91.66667%; }
+    .coffeepot .col-md-push-12 {
+      left: 100%; }
+    .coffeepot .col-md-offset-0 {
+      margin-left: 0%; }
+    .coffeepot .col-md-offset-1 {
+      margin-left: 8.33333%; }
+    .coffeepot .col-md-offset-2 {
+      margin-left: 16.66667%; }
+    .coffeepot .col-md-offset-3 {
+      margin-left: 25%; }
+    .coffeepot .col-md-offset-4 {
+      margin-left: 33.33333%; }
+    .coffeepot .col-md-offset-5 {
+      margin-left: 41.66667%; }
+    .coffeepot .col-md-offset-6 {
+      margin-left: 50%; }
+    .coffeepot .col-md-offset-7 {
+      margin-left: 58.33333%; }
+    .coffeepot .col-md-offset-8 {
+      margin-left: 66.66667%; }
+    .coffeepot .col-md-offset-9 {
+      margin-left: 75%; }
+    .coffeepot .col-md-offset-10 {
+      margin-left: 83.33333%; }
+    .coffeepot .col-md-offset-11 {
+      margin-left: 91.66667%; }
+    .coffeepot .col-md-offset-12 {
+      margin-left: 100%; } }
+  @media (min-width: 62em) {
+    .coffeepot .col-lg-1, .coffeepot .col-lg-2, .coffeepot .col-lg-3, .coffeepot .col-lg-4, .coffeepot .col-lg-5, .coffeepot .col-lg-6, .coffeepot .col-lg-7, .coffeepot .col-lg-8, .coffeepot .col-lg-9, .coffeepot .col-lg-10, .coffeepot .col-lg-11, .coffeepot .col-lg-12 {
+      float: left; }
+    .coffeepot .col-lg-1 {
+      width: 8.33333%; }
+    .coffeepot .col-lg-2 {
+      width: 16.66667%; }
+    .coffeepot .col-lg-3 {
+      width: 25%; }
+    .coffeepot .col-lg-4 {
+      width: 33.33333%; }
+    .coffeepot .col-lg-5 {
+      width: 41.66667%; }
+    .coffeepot .col-lg-6 {
+      width: 50%; }
+    .coffeepot .col-lg-7 {
+      width: 58.33333%; }
+    .coffeepot .col-lg-8 {
+      width: 66.66667%; }
+    .coffeepot .col-lg-9 {
+      width: 75%; }
+    .coffeepot .col-lg-10 {
+      width: 83.33333%; }
+    .coffeepot .col-lg-11 {
+      width: 91.66667%; }
+    .coffeepot .col-lg-12 {
+      width: 100%; }
+    .coffeepot .col-lg-pull-0 {
+      right: auto; }
+    .coffeepot .col-lg-pull-1 {
+      right: 8.33333%; }
+    .coffeepot .col-lg-pull-2 {
+      right: 16.66667%; }
+    .coffeepot .col-lg-pull-3 {
+      right: 25%; }
+    .coffeepot .col-lg-pull-4 {
+      right: 33.33333%; }
+    .coffeepot .col-lg-pull-5 {
+      right: 41.66667%; }
+    .coffeepot .col-lg-pull-6 {
+      right: 50%; }
+    .coffeepot .col-lg-pull-7 {
+      right: 58.33333%; }
+    .coffeepot .col-lg-pull-8 {
+      right: 66.66667%; }
+    .coffeepot .col-lg-pull-9 {
+      right: 75%; }
+    .coffeepot .col-lg-pull-10 {
+      right: 83.33333%; }
+    .coffeepot .col-lg-pull-11 {
+      right: 91.66667%; }
+    .coffeepot .col-lg-pull-12 {
+      right: 100%; }
+    .coffeepot .col-lg-push-0 {
+      left: auto; }
+    .coffeepot .col-lg-push-1 {
+      left: 8.33333%; }
+    .coffeepot .col-lg-push-2 {
+      left: 16.66667%; }
+    .coffeepot .col-lg-push-3 {
+      left: 25%; }
+    .coffeepot .col-lg-push-4 {
+      left: 33.33333%; }
+    .coffeepot .col-lg-push-5 {
+      left: 41.66667%; }
+    .coffeepot .col-lg-push-6 {
+      left: 50%; }
+    .coffeepot .col-lg-push-7 {
+      left: 58.33333%; }
+    .coffeepot .col-lg-push-8 {
+      left: 66.66667%; }
+    .coffeepot .col-lg-push-9 {
+      left: 75%; }
+    .coffeepot .col-lg-push-10 {
+      left: 83.33333%; }
+    .coffeepot .col-lg-push-11 {
+      left: 91.66667%; }
+    .coffeepot .col-lg-push-12 {
+      left: 100%; }
+    .coffeepot .col-lg-offset-0 {
+      margin-left: 0%; }
+    .coffeepot .col-lg-offset-1 {
+      margin-left: 8.33333%; }
+    .coffeepot .col-lg-offset-2 {
+      margin-left: 16.66667%; }
+    .coffeepot .col-lg-offset-3 {
+      margin-left: 25%; }
+    .coffeepot .col-lg-offset-4 {
+      margin-left: 33.33333%; }
+    .coffeepot .col-lg-offset-5 {
+      margin-left: 41.66667%; }
+    .coffeepot .col-lg-offset-6 {
+      margin-left: 50%; }
+    .coffeepot .col-lg-offset-7 {
+      margin-left: 58.33333%; }
+    .coffeepot .col-lg-offset-8 {
+      margin-left: 66.66667%; }
+    .coffeepot .col-lg-offset-9 {
+      margin-left: 75%; }
+    .coffeepot .col-lg-offset-10 {
+      margin-left: 83.33333%; }
+    .coffeepot .col-lg-offset-11 {
+      margin-left: 91.66667%; }
+    .coffeepot .col-lg-offset-12 {
+      margin-left: 100%; } }
+  @media (min-width: 75em) {
+    .coffeepot .col-xl-1, .coffeepot .col-xl-2, .coffeepot .col-xl-3, .coffeepot .col-xl-4, .coffeepot .col-xl-5, .coffeepot .col-xl-6, .coffeepot .col-xl-7, .coffeepot .col-xl-8, .coffeepot .col-xl-9, .coffeepot .col-xl-10, .coffeepot .col-xl-11, .coffeepot .col-xl-12 {
+      float: left; }
+    .coffeepot .col-xl-1 {
+      width: 8.33333%; }
+    .coffeepot .col-xl-2 {
+      width: 16.66667%; }
+    .coffeepot .col-xl-3 {
+      width: 25%; }
+    .coffeepot .col-xl-4 {
+      width: 33.33333%; }
+    .coffeepot .col-xl-5 {
+      width: 41.66667%; }
+    .coffeepot .col-xl-6 {
+      width: 50%; }
+    .coffeepot .col-xl-7 {
+      width: 58.33333%; }
+    .coffeepot .col-xl-8 {
+      width: 66.66667%; }
+    .coffeepot .col-xl-9 {
+      width: 75%; }
+    .coffeepot .col-xl-10 {
+      width: 83.33333%; }
+    .coffeepot .col-xl-11 {
+      width: 91.66667%; }
+    .coffeepot .col-xl-12 {
+      width: 100%; }
+    .coffeepot .col-xl-pull-0 {
+      right: auto; }
+    .coffeepot .col-xl-pull-1 {
+      right: 8.33333%; }
+    .coffeepot .col-xl-pull-2 {
+      right: 16.66667%; }
+    .coffeepot .col-xl-pull-3 {
+      right: 25%; }
+    .coffeepot .col-xl-pull-4 {
+      right: 33.33333%; }
+    .coffeepot .col-xl-pull-5 {
+      right: 41.66667%; }
+    .coffeepot .col-xl-pull-6 {
+      right: 50%; }
+    .coffeepot .col-xl-pull-7 {
+      right: 58.33333%; }
+    .coffeepot .col-xl-pull-8 {
+      right: 66.66667%; }
+    .coffeepot .col-xl-pull-9 {
+      right: 75%; }
+    .coffeepot .col-xl-pull-10 {
+      right: 83.33333%; }
+    .coffeepot .col-xl-pull-11 {
+      right: 91.66667%; }
+    .coffeepot .col-xl-pull-12 {
+      right: 100%; }
+    .coffeepot .col-xl-push-0 {
+      left: auto; }
+    .coffeepot .col-xl-push-1 {
+      left: 8.33333%; }
+    .coffeepot .col-xl-push-2 {
+      left: 16.66667%; }
+    .coffeepot .col-xl-push-3 {
+      left: 25%; }
+    .coffeepot .col-xl-push-4 {
+      left: 33.33333%; }
+    .coffeepot .col-xl-push-5 {
+      left: 41.66667%; }
+    .coffeepot .col-xl-push-6 {
+      left: 50%; }
+    .coffeepot .col-xl-push-7 {
+      left: 58.33333%; }
+    .coffeepot .col-xl-push-8 {
+      left: 66.66667%; }
+    .coffeepot .col-xl-push-9 {
+      left: 75%; }
+    .coffeepot .col-xl-push-10 {
+      left: 83.33333%; }
+    .coffeepot .col-xl-push-11 {
+      left: 91.66667%; }
+    .coffeepot .col-xl-push-12 {
+      left: 100%; }
+    .coffeepot .col-xl-offset-0 {
+      margin-left: 0%; }
+    .coffeepot .col-xl-offset-1 {
+      margin-left: 8.33333%; }
+    .coffeepot .col-xl-offset-2 {
+      margin-left: 16.66667%; }
+    .coffeepot .col-xl-offset-3 {
+      margin-left: 25%; }
+    .coffeepot .col-xl-offset-4 {
+      margin-left: 33.33333%; }
+    .coffeepot .col-xl-offset-5 {
+      margin-left: 41.66667%; }
+    .coffeepot .col-xl-offset-6 {
+      margin-left: 50%; }
+    .coffeepot .col-xl-offset-7 {
+      margin-left: 58.33333%; }
+    .coffeepot .col-xl-offset-8 {
+      margin-left: 66.66667%; }
+    .coffeepot .col-xl-offset-9 {
+      margin-left: 75%; }
+    .coffeepot .col-xl-offset-10 {
+      margin-left: 83.33333%; }
+    .coffeepot .col-xl-offset-11 {
+      margin-left: 91.66667%; }
+    .coffeepot .col-xl-offset-12 {
+      margin-left: 100%; } }
+  .coffeepot .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem; }
+    .coffeepot .table th,
+    .coffeepot .table td {
+      padding: 0.75rem;
+      line-height: 1.5;
+      vertical-align: top;
+      border-top: 1px solid #eceeef; }
+    .coffeepot .table thead th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #eceeef; }
+    .coffeepot .table tbody + tbody {
+      border-top: 2px solid #eceeef; }
+    .coffeepot .table .table {
+      background-color: #fff; }
+  .coffeepot .table-sm th,
+  .coffeepot .table-sm td {
+    padding: 0.3rem; }
+  .coffeepot .table-bordered {
+    border: 1px solid #eceeef; }
+    .coffeepot .table-bordered th,
+    .coffeepot .table-bordered td {
+      border: 1px solid #eceeef; }
+    .coffeepot .table-bordered thead th,
+    .coffeepot .table-bordered thead td {
+      border-bottom-width: 2px; }
+  .coffeepot .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; }
+  .coffeepot .table-hover tbody tr:hover {
+    background-color: #f5f5f5; }
+  .coffeepot .table-active,
+  .coffeepot .table-active > th,
+  .coffeepot .table-active > td {
+    background-color: #f5f5f5; }
+  .coffeepot .table-hover .table-active:hover {
+    background-color: #e8e8e8; }
+    .coffeepot .table-hover .table-active:hover > td,
+    .coffeepot .table-hover .table-active:hover > th {
+      background-color: #e8e8e8; }
+  .coffeepot .table-success,
+  .coffeepot .table-success > th,
+  .coffeepot .table-success > td {
+    background-color: #dff0d8; }
+  .coffeepot .table-hover .table-success:hover {
+    background-color: #d0e9c6; }
+    .coffeepot .table-hover .table-success:hover > td,
+    .coffeepot .table-hover .table-success:hover > th {
+      background-color: #d0e9c6; }
+  .coffeepot .table-info,
+  .coffeepot .table-info > th,
+  .coffeepot .table-info > td {
+    background-color: #d9edf7; }
+  .coffeepot .table-hover .table-info:hover {
+    background-color: #c4e3f3; }
+    .coffeepot .table-hover .table-info:hover > td,
+    .coffeepot .table-hover .table-info:hover > th {
+      background-color: #c4e3f3; }
+  .coffeepot .table-warning,
+  .coffeepot .table-warning > th,
+  .coffeepot .table-warning > td {
+    background-color: #fcf8e3; }
+  .coffeepot .table-hover .table-warning:hover {
+    background-color: #faf2cc; }
+    .coffeepot .table-hover .table-warning:hover > td,
+    .coffeepot .table-hover .table-warning:hover > th {
+      background-color: #faf2cc; }
+  .coffeepot .table-danger,
+  .coffeepot .table-danger > th,
+  .coffeepot .table-danger > td {
+    background-color: #f2dede; }
+  .coffeepot .table-hover .table-danger:hover {
+    background-color: #ebcccc; }
+    .coffeepot .table-hover .table-danger:hover > td,
+    .coffeepot .table-hover .table-danger:hover > th {
+      background-color: #ebcccc; }
+  .coffeepot .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto; }
+  .coffeepot .thead-inverse th {
+    color: #fff;
+    background-color: #373a3c; }
+  .coffeepot .thead-default th {
+    color: #55595c;
+    background-color: #eceeef; }
+  .coffeepot .table-inverse {
+    color: #eceeef;
+    background-color: #373a3c; }
+    .coffeepot .table-inverse.table-bordered {
+      border: 0; }
+    .coffeepot .table-inverse th,
+    .coffeepot .table-inverse td,
+    .coffeepot .table-inverse thead th {
+      border-color: #55595c; }
+  .coffeepot .table-reflow thead {
+    float: left; }
+  .coffeepot .table-reflow tbody {
+    display: block;
+    white-space: nowrap; }
+  .coffeepot .table-reflow th,
+  .coffeepot .table-reflow td {
+    border-top: 1px solid #eceeef;
+    border-left: 1px solid #eceeef; }
+    .coffeepot .table-reflow th:last-child,
+    .coffeepot .table-reflow td:last-child {
+      border-right: 1px solid #eceeef; }
+  .coffeepot .table-reflow thead:last-child tr:last-child th,
+  .coffeepot .table-reflow thead:last-child tr:last-child td,
+  .coffeepot .table-reflow tbody:last-child tr:last-child th,
+  .coffeepot .table-reflow tbody:last-child tr:last-child td,
+  .coffeepot .table-reflow tfoot:last-child tr:last-child th,
+  .coffeepot .table-reflow tfoot:last-child tr:last-child td {
+    border-bottom: 1px solid #eceeef; }
+  .coffeepot .table-reflow tr {
+    float: left; }
+    .coffeepot .table-reflow tr th,
+    .coffeepot .table-reflow tr td {
+      display: block !important;
+      border: 1px solid #eceeef; }
+  .coffeepot .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem; }
+    .coffeepot .form-control::-ms-expand {
+      background-color: transparent;
+      border: 0; }
+    .coffeepot .form-control:focus {
+      border-color: #66afe9;
+      outline: none; }
+    .coffeepot .form-control::placeholder {
+      color: #999;
+      opacity: 1; }
+    .coffeepot .form-control:disabled, .coffeepot .form-control[readonly], fieldset[disabled] .coffeepot .form-control {
+      background-color: #eceeef;
+      opacity: 1; }
+    .coffeepot .form-control[disabled], fieldset[disabled] .coffeepot .form-control {
+      cursor: not-allowed; }
+  .coffeepot .form-control-file,
+  .coffeepot .form-control-range {
+    display: block; }
+  .coffeepot .form-control-label {
+    padding: 0.4375rem 0.75rem;
+    margin-bottom: 0; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .coffeepot input[type="date"].form-control,
+    .coffeepot input[type="time"].form-control,
+    .coffeepot input[type="datetime-local"].form-control,
+    .coffeepot input[type="month"].form-control {
+      line-height: 2.375rem; }
+    .coffeepot input[type="date"].input-sm, .input-group-sm .coffeepot input[type="date"].form-control,
+    .coffeepot input[type="time"].input-sm, .input-group-sm
+    .coffeepot input[type="time"].form-control,
+    .coffeepot input[type="datetime-local"].input-sm, .input-group-sm
+    .coffeepot input[type="datetime-local"].form-control,
+    .coffeepot input[type="month"].input-sm, .input-group-sm
+    .coffeepot input[type="month"].form-control {
+      line-height: 1.95rem; }
+    .coffeepot input[type="date"].input-lg, .input-group-lg .coffeepot input[type="date"].form-control,
+    .coffeepot input[type="time"].input-lg, .input-group-lg
+    .coffeepot input[type="time"].form-control,
+    .coffeepot input[type="datetime-local"].input-lg, .input-group-lg
+    .coffeepot input[type="datetime-local"].form-control,
+    .coffeepot input[type="month"].input-lg, .input-group-lg
+    .coffeepot input[type="month"].form-control {
+      line-height: 3.29167rem; } }
+  .coffeepot .form-control-static {
+    min-height: 2.375rem;
+    padding-top: 0.4375rem;
+    padding-bottom: 0.4375rem;
+    margin-bottom: 0; }
+    .coffeepot .form-control-static.form-control-sm, .coffeepot .input-group-sm > .form-control-static.form-control,
+    .coffeepot .input-group-sm > .form-control-static.input-group-addon,
+    .coffeepot .input-group-sm > .input-group-btn > .form-control-static.btn, .coffeepot .form-control-static.form-control-lg, .coffeepot .input-group-lg > .form-control-static.form-control,
+    .coffeepot .input-group-lg > .form-control-static.input-group-addon,
+    .coffeepot .input-group-lg > .input-group-btn > .form-control-static.btn {
+      padding-right: 0;
+      padding-left: 0; }
+  .coffeepot .form-control-sm, .coffeepot .input-group-sm > .form-control,
+  .coffeepot .input-group-sm > .input-group-addon,
+  .coffeepot .input-group-sm > .input-group-btn > .btn {
+    padding: 0.275rem 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    border-radius: 0.2rem; }
+  .coffeepot .form-control-lg, .coffeepot .input-group-lg > .form-control,
+  .coffeepot .input-group-lg > .input-group-addon,
+  .coffeepot .input-group-lg > .input-group-btn > .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.33333;
+    border-radius: 0.3rem; }
+  .coffeepot .form-group {
+    margin-bottom: 15px; }
+  .coffeepot .radio,
+  .coffeepot .checkbox {
+    position: relative;
+    display: block;
+    margin-bottom: 0.75rem; }
+    .coffeepot .radio label,
+    .coffeepot .checkbox label {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+      font-weight: normal;
+      cursor: pointer; }
+      .coffeepot .radio label input:only-child,
+      .coffeepot .checkbox label input:only-child {
+        position: static; }
+  .coffeepot .radio input[type="radio"],
+  .coffeepot .radio-inline input[type="radio"],
+  .coffeepot .checkbox input[type="checkbox"],
+  .coffeepot .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-top: .25rem;
+    margin-left: -1.25rem; }
+  .coffeepot .radio + .radio,
+  .coffeepot .checkbox + .checkbox {
+    margin-top: -.25rem; }
+  .coffeepot .radio-inline,
+  .coffeepot .checkbox-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer; }
+  .coffeepot .radio-inline + .radio-inline,
+  .coffeepot .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: .75rem; }
+  .coffeepot input[type="radio"]:disabled, .coffeepot input[type="radio"].disabled, fieldset[disabled] .coffeepot input[type="radio"],
+  .coffeepot input[type="checkbox"]:disabled,
+  .coffeepot input[type="checkbox"].disabled, fieldset[disabled]
+  .coffeepot input[type="checkbox"] {
+    cursor: not-allowed; }
+  .coffeepot .radio-inline.disabled, fieldset[disabled] .coffeepot .radio-inline,
+  .coffeepot .checkbox-inline.disabled, fieldset[disabled]
+  .coffeepot .checkbox-inline {
+    cursor: not-allowed; }
+  .coffeepot .radio.disabled label, fieldset[disabled] .coffeepot .radio label,
+  .coffeepot .checkbox.disabled label, fieldset[disabled]
+  .coffeepot .checkbox label {
+    cursor: not-allowed; }
+  .coffeepot .form-control-success,
+  .coffeepot .form-control-warning,
+  .coffeepot .form-control-error {
+    padding-right: 2.25rem;
+    background-position: center right 0.59375rem;
+    background-size: 1.54375rem 1.54375rem;
+    background-repeat: no-repeat; }
+  .coffeepot .has-success .help-block,
+  .coffeepot .has-success .control-label,
+  .coffeepot .has-success .radio,
+  .coffeepot .has-success .checkbox,
+  .coffeepot .has-success .radio-inline,
+  .coffeepot .has-success .checkbox-inline, .coffeepot .has-success.radio label, .coffeepot .has-success.checkbox label, .coffeepot .has-success.radio-inline label, .coffeepot .has-success.checkbox-inline label {
+    color: #5cb85c; }
+  .coffeepot .has-success .form-control {
+    border-color: #5cb85c; }
+  .coffeepot .has-success .input-group-addon {
+    color: #5cb85c;
+    border-color: #5cb85c;
+    background-color: #eaf6ea; }
+  .coffeepot .has-success .form-control-feedback {
+    color: #5cb85c; }
+  .coffeepot .has-success .form-control-success {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM1Q0I4NUMiIGQ9Ik0yMzMuOCw2MTAuMWMtMTMuMywwLTI1LjktNi4yLTM0LTE2LjlMOTAuNSw0NDguOEM3Ni4zLDQzMCw4MCw0MDMuMyw5OC44LDM4OS4xYzE4LjgtMTQuMyw0NS41LTEwLjUsNTkuOCw4LjNsNzEuOSw5NWwyMjAuOS0yNTAuNWMxMi41LTIwLDM4LjgtMjYuMSw1OC44LTEzLjZjMjAsMTIuNCwyNi4xLDM4LjcsMTMuNiw1OC44TDI3MCw1OTBjLTcuNCwxMi0yMC4yLDE5LjQtMzQuMywyMC4xQzIzNS4xLDYxMC4xLDIzNC41LDYxMC4xLDIzMy44LDYxMC4xeiIvPjwvc3ZnPg=="); }
+  .coffeepot .has-warning .help-block,
+  .coffeepot .has-warning .control-label,
+  .coffeepot .has-warning .radio,
+  .coffeepot .has-warning .checkbox,
+  .coffeepot .has-warning .radio-inline,
+  .coffeepot .has-warning .checkbox-inline, .coffeepot .has-warning.radio label, .coffeepot .has-warning.checkbox label, .coffeepot .has-warning.radio-inline label, .coffeepot .has-warning.checkbox-inline label {
+    color: #f0ad4e; }
+  .coffeepot .has-warning .form-control {
+    border-color: #f0ad4e; }
+  .coffeepot .has-warning .input-group-addon {
+    color: #f0ad4e;
+    border-color: #f0ad4e;
+    background-color: white; }
+  .coffeepot .has-warning .form-control-feedback {
+    color: #f0ad4e; }
+  .coffeepot .has-warning .form-control-warning {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ildhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI0YwQUQ0RSIgZD0iTTYwMyw2NDAuMmwtMjc4LjUtNTA5Yy0zLjgtNi42LTEwLjgtMTAuNi0xOC41LTEwLjZzLTE0LjcsNC4xLTE4LjUsMTAuNkw5LDY0MC4yYy0zLjcsNi41LTMuNiwxNC40LDAuMiwyMC44YzMuOCw2LjUsMTAuOCwxMC40LDE4LjMsMTAuNGg1NTcuMWM3LjUsMCwxNC41LTMuOSwxOC4zLTEwLjRDNjA2LjYsNjU0LjYsNjA2LjcsNjQ2LjYsNjAzLDY0MC4yeiBNMzM2LjYsNjEwLjJoLTYxLjJWNTQ5aDYxLjJWNjEwLjJ6IE0zMzYuNiw1MDMuMWgtNjEuMlYzMDQuMmg2MS4yVjUwMy4xeiIvPjwvc3ZnPg=="); }
+  .coffeepot .has-error .help-block,
+  .coffeepot .has-error .control-label,
+  .coffeepot .has-error .radio,
+  .coffeepot .has-error .checkbox,
+  .coffeepot .has-error .radio-inline,
+  .coffeepot .has-error .checkbox-inline, .coffeepot .has-error.radio label, .coffeepot .has-error.checkbox label, .coffeepot .has-error.radio-inline label, .coffeepot .has-error.checkbox-inline label {
+    color: #d9534f; }
+  .coffeepot .has-error .form-control {
+    border-color: #d9534f; }
+  .coffeepot .has-error .input-group-addon {
+    color: #d9534f;
+    border-color: #d9534f;
+    background-color: #fdf7f7; }
+  .coffeepot .has-error .form-control-feedback {
+    color: #d9534f; }
+  .coffeepot .has-error .form-control-error {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNyb3NzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNEOTUzNEYiIGQ9Ik00NDcsNTQ0LjRjLTE0LjQsMTQuNC0zNy42LDE0LjQtNTEuOSwwTDMwNiw0NTEuN2wtODkuMSw5Mi43Yy0xNC40LDE0LjQtMzcuNiwxNC40LTUxLjksMGMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlsOTIuNC05Ni40TDE2NSwyOTkuNmMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlzMzcuNi0xNC40LDUxLjksMGw4OS4yLDkyLjdsODkuMS05Mi43YzE0LjQtMTQuNCwzNy42LTE0LjQsNTEuOSwwYzE0LjQsMTQuNCwxNC40LDM3LjYsMCw1MS45TDM1NC43LDM5Nmw5Mi40LDk2LjRDNDYxLjQsNTA2LjgsNDYxLjQsNTMwLDQ0Nyw1NDQuNHoiLz48L3N2Zz4="); }
+  @media (min-width: 34em) {
+    .coffeepot .form-inline .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle; }
+    .coffeepot .form-inline .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle; }
+    .coffeepot .form-inline .form-control-static {
+      display: inline-block; }
+    .coffeepot .form-inline .input-group {
+      display: inline-table;
+      vertical-align: middle; }
+      .coffeepot .form-inline .input-group .input-group-addon,
+      .coffeepot .form-inline .input-group .input-group-btn,
+      .coffeepot .form-inline .input-group .form-control {
+        width: auto; }
+    .coffeepot .form-inline .input-group > .form-control {
+      width: 100%; }
+    .coffeepot .form-inline .control-label {
+      margin-bottom: 0;
+      vertical-align: middle; }
+    .coffeepot .form-inline .radio,
+    .coffeepot .form-inline .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle; }
+      .coffeepot .form-inline .radio label,
+      .coffeepot .form-inline .checkbox label {
+        padding-left: 0; }
+    .coffeepot .form-inline .radio input[type="radio"],
+    .coffeepot .form-inline .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0; }
+    .coffeepot .form-inline .has-feedback .form-control-feedback {
+      top: 0; } }
+  .coffeepot .btn {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+    padding: 0.375rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem; }
+    .coffeepot .btn:focus, .coffeepot .btn.focus, .coffeepot .btn:active:focus, .coffeepot .btn:active.focus, .coffeepot .btn.active:focus, .coffeepot .btn.active.focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    .coffeepot .btn:focus, .coffeepot .btn:hover {
+      text-decoration: none; }
+    .coffeepot .btn.focus {
+      text-decoration: none; }
+    .coffeepot .btn:active, .coffeepot .btn.active {
+      background-image: none;
+      outline: 0; }
+    .coffeepot .btn.disabled, .coffeepot .btn:disabled, fieldset[disabled] .coffeepot .btn {
+      cursor: not-allowed;
+      opacity: .65; }
+  .coffeepot a.btn.disaabled,
+  .coffeepot fieldset[disabled] a.btn {
+    pointer-events: none; }
+  .coffeepot .btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8; }
+    .coffeepot .btn-primary:focus, .coffeepot .btn-primary.focus, .coffeepot .btn-primary:active, .coffeepot .btn-primary.active, .open > .coffeepot .btn-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #025aa5;
+      border-color: #01549b; }
+    .coffeepot .btn-primary:hover {
+      color: #fff;
+      background-color: #025aa5;
+      border-color: #01549b; }
+    .coffeepot .btn-primary:active, .coffeepot .btn-primary.active, .open > .coffeepot .btn-primary.dropdown-toggle {
+      background-image: none; }
+    .coffeepot .btn-primary.disabled:focus, .coffeepot .btn-primary.disabled.focus, .coffeepot .btn-primary:disabled:focus, .coffeepot .btn-primary:disabled.focus, fieldset[disabled] .coffeepot .btn-primary:focus, fieldset[disabled] .coffeepot .btn-primary.focus {
+      background-color: #0275d8;
+      border-color: #0275d8; }
+    .coffeepot .btn-primary.disabled:hover, .coffeepot .btn-primary:disabled:hover, fieldset[disabled] .coffeepot .btn-primary:hover {
+      background-color: #0275d8;
+      border-color: #0275d8; }
+  .coffeepot .btn-secondary {
+    color: #373a3c;
+    background-color: #fff;
+    border-color: #ccc; }
+    .coffeepot .btn-secondary:focus, .coffeepot .btn-secondary.focus, .coffeepot .btn-secondary:active, .coffeepot .btn-secondary.active, .open > .coffeepot .btn-secondary.dropdown-toggle {
+      color: #373a3c;
+      background-color: #e6e6e6;
+      border-color: #adadad; }
+    .coffeepot .btn-secondary:hover {
+      color: #373a3c;
+      background-color: #e6e6e6;
+      border-color: #adadad; }
+    .coffeepot .btn-secondary:active, .coffeepot .btn-secondary.active, .open > .coffeepot .btn-secondary.dropdown-toggle {
+      background-image: none; }
+    .coffeepot .btn-secondary.disabled:focus, .coffeepot .btn-secondary.disabled.focus, .coffeepot .btn-secondary:disabled:focus, .coffeepot .btn-secondary:disabled.focus, fieldset[disabled] .coffeepot .btn-secondary:focus, fieldset[disabled] .coffeepot .btn-secondary.focus {
+      background-color: #fff;
+      border-color: #ccc; }
+    .coffeepot .btn-secondary.disabled:hover, .coffeepot .btn-secondary:disabled:hover, fieldset[disabled] .coffeepot .btn-secondary:hover {
+      background-color: #fff;
+      border-color: #ccc; }
+  .coffeepot .btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #5bc0de; }
+    .coffeepot .btn-info:focus, .coffeepot .btn-info.focus, .coffeepot .btn-info:active, .coffeepot .btn-info.active, .open > .coffeepot .btn-info.dropdown-toggle {
+      color: #fff;
+      background-color: #31b0d5;
+      border-color: #2aabd2; }
+    .coffeepot .btn-info:hover {
+      color: #fff;
+      background-color: #31b0d5;
+      border-color: #2aabd2; }
+    .coffeepot .btn-info:active, .coffeepot .btn-info.active, .open > .coffeepot .btn-info.dropdown-toggle {
+      background-image: none; }
+    .coffeepot .btn-info.disabled:focus, .coffeepot .btn-info.disabled.focus, .coffeepot .btn-info:disabled:focus, .coffeepot .btn-info:disabled.focus, fieldset[disabled] .coffeepot .btn-info:focus, fieldset[disabled] .coffeepot .btn-info.focus {
+      background-color: #5bc0de;
+      border-color: #5bc0de; }
+    .coffeepot .btn-info.disabled:hover, .coffeepot .btn-info:disabled:hover, fieldset[disabled] .coffeepot .btn-info:hover {
+      background-color: #5bc0de;
+      border-color: #5bc0de; }
+  .coffeepot .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c; }
+    .coffeepot .btn-success:focus, .coffeepot .btn-success.focus, .coffeepot .btn-success:active, .coffeepot .btn-success.active, .open > .coffeepot .btn-success.dropdown-toggle {
+      color: #fff;
+      background-color: #449d44;
+      border-color: #419641; }
+    .coffeepot .btn-success:hover {
+      color: #fff;
+      background-color: #449d44;
+      border-color: #419641; }
+    .coffeepot .btn-success:active, .coffeepot .btn-success.active, .open > .coffeepot .btn-success.dropdown-toggle {
+      background-image: none; }
+    .coffeepot .btn-success.disabled:focus, .coffeepot .btn-success.disabled.focus, .coffeepot .btn-success:disabled:focus, .coffeepot .btn-success:disabled.focus, fieldset[disabled] .coffeepot .btn-success:focus, fieldset[disabled] .coffeepot .btn-success.focus {
+      background-color: #5cb85c;
+      border-color: #5cb85c; }
+    .coffeepot .btn-success.disabled:hover, .coffeepot .btn-success:disabled:hover, fieldset[disabled] .coffeepot .btn-success:hover {
+      background-color: #5cb85c;
+      border-color: #5cb85c; }
+  .coffeepot .btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e; }
+    .coffeepot .btn-warning:focus, .coffeepot .btn-warning.focus, .coffeepot .btn-warning:active, .coffeepot .btn-warning.active, .open > .coffeepot .btn-warning.dropdown-toggle {
+      color: #fff;
+      background-color: #ec971f;
+      border-color: #eb9316; }
+    .coffeepot .btn-warning:hover {
+      color: #fff;
+      background-color: #ec971f;
+      border-color: #eb9316; }
+    .coffeepot .btn-warning:active, .coffeepot .btn-warning.active, .open > .coffeepot .btn-warning.dropdown-toggle {
+      background-image: none; }
+    .coffeepot .btn-warning.disabled:focus, .coffeepot .btn-warning.disabled.focus, .coffeepot .btn-warning:disabled:focus, .coffeepot .btn-warning:disabled.focus, fieldset[disabled] .coffeepot .btn-warning:focus, fieldset[disabled] .coffeepot .btn-warning.focus {
+      background-color: #f0ad4e;
+      border-color: #f0ad4e; }
+    .coffeepot .btn-warning.disabled:hover, .coffeepot .btn-warning:disabled:hover, fieldset[disabled] .coffeepot .btn-warning:hover {
+      background-color: #f0ad4e;
+      border-color: #f0ad4e; }
+  .coffeepot .btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f; }
+    .coffeepot .btn-danger:focus, .coffeepot .btn-danger.focus, .coffeepot .btn-danger:active, .coffeepot .btn-danger.active, .open > .coffeepot .btn-danger.dropdown-toggle {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #c12e2a; }
+    .coffeepot .btn-danger:hover {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #c12e2a; }
+    .coffeepot .btn-danger:active, .coffeepot .btn-danger.active, .open > .coffeepot .btn-danger.dropdown-toggle {
+      background-image: none; }
+    .coffeepot .btn-danger.disabled:focus, .coffeepot .btn-danger.disabled.focus, .coffeepot .btn-danger:disabled:focus, .coffeepot .btn-danger:disabled.focus, fieldset[disabled] .coffeepot .btn-danger:focus, fieldset[disabled] .coffeepot .btn-danger.focus {
+      background-color: #d9534f;
+      border-color: #d9534f; }
+    .coffeepot .btn-danger.disabled:hover, .coffeepot .btn-danger:disabled:hover, fieldset[disabled] .coffeepot .btn-danger:hover {
+      background-color: #d9534f;
+      border-color: #d9534f; }
+  .coffeepot .btn-primary-outline {
+    color: #0275d8;
+    background-image: none;
+    background-color: transparent;
+    border-color: #0275d8; }
+    .coffeepot .btn-primary-outline:focus, .coffeepot .btn-primary-outline.focus, .coffeepot .btn-primary-outline:active, .coffeepot .btn-primary-outline.active, .open > .coffeepot .btn-primary-outline.dropdown-toggle {
+      color: #fff;
+      background-color: #0275d8;
+      border-color: #0275d8; }
+    .coffeepot .btn-primary-outline:hover {
+      color: #fff;
+      background-color: #0275d8;
+      border-color: #0275d8; }
+    .coffeepot .btn-primary-outline.disabled:focus, .coffeepot .btn-primary-outline.disabled.focus, .coffeepot .btn-primary-outline:disabled:focus, .coffeepot .btn-primary-outline:disabled.focus, fieldset[disabled] .coffeepot .btn-primary-outline:focus, fieldset[disabled] .coffeepot .btn-primary-outline.focus {
+      border-color: #43a7fd; }
+    .coffeepot .btn-primary-outline.disabled:hover, .coffeepot .btn-primary-outline:disabled:hover, fieldset[disabled] .coffeepot .btn-primary-outline:hover {
+      border-color: #43a7fd; }
+  .coffeepot .btn-secondary-outline {
+    color: #ccc;
+    background-image: none;
+    background-color: transparent;
+    border-color: #ccc; }
+    .coffeepot .btn-secondary-outline:focus, .coffeepot .btn-secondary-outline.focus, .coffeepot .btn-secondary-outline:active, .coffeepot .btn-secondary-outline.active, .open > .coffeepot .btn-secondary-outline.dropdown-toggle {
+      color: #fff;
+      background-color: #ccc;
+      border-color: #ccc; }
+    .coffeepot .btn-secondary-outline:hover {
+      color: #fff;
+      background-color: #ccc;
+      border-color: #ccc; }
+    .coffeepot .btn-secondary-outline.disabled:focus, .coffeepot .btn-secondary-outline.disabled.focus, .coffeepot .btn-secondary-outline:disabled:focus, .coffeepot .btn-secondary-outline:disabled.focus, fieldset[disabled] .coffeepot .btn-secondary-outline:focus, fieldset[disabled] .coffeepot .btn-secondary-outline.focus {
+      border-color: white; }
+    .coffeepot .btn-secondary-outline.disabled:hover, .coffeepot .btn-secondary-outline:disabled:hover, fieldset[disabled] .coffeepot .btn-secondary-outline:hover {
+      border-color: white; }
+  .coffeepot .btn-info-outline {
+    color: #5bc0de;
+    background-image: none;
+    background-color: transparent;
+    border-color: #5bc0de; }
+    .coffeepot .btn-info-outline:focus, .coffeepot .btn-info-outline.focus, .coffeepot .btn-info-outline:active, .coffeepot .btn-info-outline.active, .open > .coffeepot .btn-info-outline.dropdown-toggle {
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #5bc0de; }
+    .coffeepot .btn-info-outline:hover {
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #5bc0de; }
+    .coffeepot .btn-info-outline.disabled:focus, .coffeepot .btn-info-outline.disabled.focus, .coffeepot .btn-info-outline:disabled:focus, .coffeepot .btn-info-outline:disabled.focus, fieldset[disabled] .coffeepot .btn-info-outline:focus, fieldset[disabled] .coffeepot .btn-info-outline.focus {
+      border-color: #b0e1ef; }
+    .coffeepot .btn-info-outline.disabled:hover, .coffeepot .btn-info-outline:disabled:hover, fieldset[disabled] .coffeepot .btn-info-outline:hover {
+      border-color: #b0e1ef; }
+  .coffeepot .btn-success-outline {
+    color: #5cb85c;
+    background-image: none;
+    background-color: transparent;
+    border-color: #5cb85c; }
+    .coffeepot .btn-success-outline:focus, .coffeepot .btn-success-outline.focus, .coffeepot .btn-success-outline:active, .coffeepot .btn-success-outline.active, .open > .coffeepot .btn-success-outline.dropdown-toggle {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #5cb85c; }
+    .coffeepot .btn-success-outline:hover {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #5cb85c; }
+    .coffeepot .btn-success-outline.disabled:focus, .coffeepot .btn-success-outline.disabled.focus, .coffeepot .btn-success-outline:disabled:focus, .coffeepot .btn-success-outline:disabled.focus, fieldset[disabled] .coffeepot .btn-success-outline:focus, fieldset[disabled] .coffeepot .btn-success-outline.focus {
+      border-color: #a3d7a3; }
+    .coffeepot .btn-success-outline.disabled:hover, .coffeepot .btn-success-outline:disabled:hover, fieldset[disabled] .coffeepot .btn-success-outline:hover {
+      border-color: #a3d7a3; }
+  .coffeepot .btn-warning-outline {
+    color: #f0ad4e;
+    background-image: none;
+    background-color: transparent;
+    border-color: #f0ad4e; }
+    .coffeepot .btn-warning-outline:focus, .coffeepot .btn-warning-outline.focus, .coffeepot .btn-warning-outline:active, .coffeepot .btn-warning-outline.active, .open > .coffeepot .btn-warning-outline.dropdown-toggle {
+      color: #fff;
+      background-color: #f0ad4e;
+      border-color: #f0ad4e; }
+    .coffeepot .btn-warning-outline:hover {
+      color: #fff;
+      background-color: #f0ad4e;
+      border-color: #f0ad4e; }
+    .coffeepot .btn-warning-outline.disabled:focus, .coffeepot .btn-warning-outline.disabled.focus, .coffeepot .btn-warning-outline:disabled:focus, .coffeepot .btn-warning-outline:disabled.focus, fieldset[disabled] .coffeepot .btn-warning-outline:focus, fieldset[disabled] .coffeepot .btn-warning-outline.focus {
+      border-color: #f8d9ac; }
+    .coffeepot .btn-warning-outline.disabled:hover, .coffeepot .btn-warning-outline:disabled:hover, fieldset[disabled] .coffeepot .btn-warning-outline:hover {
+      border-color: #f8d9ac; }
+  .coffeepot .btn-danger-outline {
+    color: #d9534f;
+    background-image: none;
+    background-color: transparent;
+    border-color: #d9534f; }
+    .coffeepot .btn-danger-outline:focus, .coffeepot .btn-danger-outline.focus, .coffeepot .btn-danger-outline:active, .coffeepot .btn-danger-outline.active, .open > .coffeepot .btn-danger-outline.dropdown-toggle {
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d9534f; }
+    .coffeepot .btn-danger-outline:hover {
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d9534f; }
+    .coffeepot .btn-danger-outline.disabled:focus, .coffeepot .btn-danger-outline.disabled.focus, .coffeepot .btn-danger-outline:disabled:focus, .coffeepot .btn-danger-outline:disabled.focus, fieldset[disabled] .coffeepot .btn-danger-outline:focus, fieldset[disabled] .coffeepot .btn-danger-outline.focus {
+      border-color: #eba5a3; }
+    .coffeepot .btn-danger-outline.disabled:hover, .coffeepot .btn-danger-outline:disabled:hover, fieldset[disabled] .coffeepot .btn-danger-outline:hover {
+      border-color: #eba5a3; }
+  .coffeepot .btn-link {
+    font-weight: normal;
+    color: #0275d8;
+    border-radius: 0; }
+    .coffeepot .btn-link, .coffeepot .btn-link:active, .coffeepot .btn-link.active, .coffeepot .btn-link:disabled, fieldset[disabled] .coffeepot .btn-link {
+      background-color: transparent; }
+    .coffeepot .btn-link, .coffeepot .btn-link:focus, .coffeepot .btn-link:active {
+      border-color: transparent; }
+    .coffeepot .btn-link:hover {
+      border-color: transparent; }
+    .coffeepot .btn-link:focus, .coffeepot .btn-link:hover {
+      color: #014c8c;
+      text-decoration: underline;
+      background-color: transparent; }
+    .coffeepot .btn-link:disabled:focus, .coffeepot .btn-link:disabled:hover, fieldset[disabled] .coffeepot .btn-link:focus, fieldset[disabled] .coffeepot .btn-link:hover {
+      color: #818a91;
+      text-decoration: none; }
+  .coffeepot .btn-lg, .coffeepot .btn-group-lg > .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.33333;
+    border-radius: 0.3rem; }
+  .coffeepot .btn-sm, .coffeepot .btn-group-sm > .btn {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    border-radius: 0.2rem; }
+  .coffeepot .btn-block {
+    display: block;
+    width: 100%; }
+  .coffeepot .btn-block + .btn-block {
+    margin-top: 5px; }
+  .coffeepot input[type="submit"].btn-block,
+  .coffeepot input[type="reset"].btn-block,
+  .coffeepot input[type="button"].btn-block {
+    width: 100%; }
+  .coffeepot .fade {
+    opacity: 0;
+    transition: opacity .15s linear; }
+    .coffeepot .fade.in {
+      opacity: 1; }
+  .coffeepot .collapse {
+    display: none; }
+    .coffeepot .collapse.in {
+      display: block; }
+  .coffeepot .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition-timing-function: ease;
+    transition-duration: .35s;
+    transition-property: height; }
+  .coffeepot .dropup,
+  .coffeepot .dropdown {
+    position: relative; }
+  .coffeepot .dropdown-toggle:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .25rem;
+    vertical-align: middle;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent; }
+  .coffeepot .dropdown-toggle:focus {
+    outline: 0; }
+  .coffeepot .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem; }
+  .coffeepot .dropdown-divider {
+    height: 1px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    background-color: #e5e5e5; }
+  .coffeepot .dropdown-item {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #373a3c;
+    white-space: nowrap;
+    text-align: inherit;
+    width: 100%;
+    background: none;
+    border: 0; }
+    .coffeepot .dropdown-item:focus, .coffeepot .dropdown-item:hover {
+      color: #2b2d2f;
+      text-decoration: none;
+      background-color: #f5f5f5; }
+    .coffeepot .dropdown-item.active, .coffeepot .dropdown-item.active:focus, .coffeepot .dropdown-item.active:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color: #0275d8;
+      outline: 0; }
+    .coffeepot .dropdown-item.disabled, .coffeepot .dropdown-item.disabled:focus, .coffeepot .dropdown-item.disabled:hover {
+      color: #818a91; }
+    .coffeepot .dropdown-item.disabled:focus, .coffeepot .dropdown-item.disabled:hover {
+      text-decoration: none;
+      cursor: not-allowed;
+      background-color: transparent;
+      background-image: none;
+      filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)"; }
+  .coffeepot .open > .dropdown-menu {
+    display: block; }
+  .coffeepot .open > a {
+    outline: 0; }
+  .coffeepot .dropdown-menu-right {
+    right: 0;
+    left: auto; }
+  .coffeepot .dropdown-menu-left {
+    right: auto;
+    left: 0; }
+  .coffeepot .dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #818a91;
+    white-space: nowrap; }
+  .coffeepot .dropdown-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990; }
+  .coffeepot .pull-right > .dropdown-menu {
+    right: 0;
+    left: auto; }
+  .coffeepot .dropup .caret,
+  .coffeepot .navbar-fixed-bottom .dropdown .caret {
+    content: "";
+    border-top: 0;
+    border-bottom: 0.3em solid; }
+  .coffeepot .dropup .dropdown-menu,
+  .coffeepot .navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px; }
+  .coffeepot .btn-group,
+  .coffeepot .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
+    .coffeepot .btn-group > .btn,
+    .coffeepot .btn-group-vertical > .btn {
+      position: relative;
+      float: left; }
+      .coffeepot .btn-group > .btn:focus, .coffeepot .btn-group > .btn:active, .coffeepot .btn-group > .btn.active,
+      .coffeepot .btn-group-vertical > .btn:focus,
+      .coffeepot .btn-group-vertical > .btn:active,
+      .coffeepot .btn-group-vertical > .btn.active {
+        z-index: 2; }
+      .coffeepot .btn-group > .btn:hover,
+      .coffeepot .btn-group-vertical > .btn:hover {
+        z-index: 2; }
+  .coffeepot .btn-group .btn + .btn,
+  .coffeepot .btn-group .btn + .btn-group,
+  .coffeepot .btn-group .btn-group + .btn,
+  .coffeepot .btn-group .btn-group + .btn-group {
+    margin-left: -1px; }
+  .coffeepot .btn-toolbar {
+    margin-left: -5px; }
+    .coffeepot .btn-toolbar:before, .coffeepot .btn-toolbar:after {
+      content: " ";
+      display: table; }
+    .coffeepot .btn-toolbar:after {
+      clear: both; }
+    .coffeepot .btn-toolbar .btn-group,
+    .coffeepot .btn-toolbar .input-group {
+      float: left; }
+    .coffeepot .btn-toolbar > .btn,
+    .coffeepot .btn-toolbar > .btn-group,
+    .coffeepot .btn-toolbar > .input-group {
+      margin-left: 5px; }
+  .coffeepot .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0; }
+  .coffeepot .btn-group > .btn:first-child {
+    margin-left: 0; }
+    .coffeepot .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+  .coffeepot .btn-group > .btn:last-child:not(:first-child),
+  .coffeepot .btn-group > .dropdown-toggle:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+  .coffeepot .btn-group > .btn-group {
+    float: left; }
+  .coffeepot .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0; }
+  .coffeepot .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+  .coffeepot .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .coffeepot .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+  .coffeepot .btn-group .dropdown-toggle:active,
+  .coffeepot .btn-group.open .dropdown-toggle {
+    outline: 0; }
+  .coffeepot .btn-group > .btn + .dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px; }
+  .coffeepot .btn-group > .btn-lg + .dropdown-toggle, .coffeepot .btn-group-lg.btn-group > .btn + .dropdown-toggle {
+    padding-right: 12px;
+    padding-left: 12px; }
+  .coffeepot .btn .caret {
+    margin-left: 0; }
+  .coffeepot .btn-lg .caret, .coffeepot .btn-group-lg > .btn .caret {
+    border-width: 0.3em 0.3em 0;
+    border-bottom-width: 0; }
+  .coffeepot .dropup .btn-lg .caret, .coffeepot .dropup .btn-group-lg > .btn .caret {
+    border-width: 0 0.3em 0.3em; }
+  .coffeepot .btn-group-vertical > .btn,
+  .coffeepot .btn-group-vertical > .btn-group,
+  .coffeepot .btn-group-vertical > .btn-group > .btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%; }
+  .coffeepot .btn-group-vertical > .btn-group:before, .coffeepot .btn-group-vertical > .btn-group:after {
+    content: " ";
+    display: table; }
+  .coffeepot .btn-group-vertical > .btn-group:after {
+    clear: both; }
+  .coffeepot .btn-group-vertical > .btn-group > .btn {
+    float: none; }
+  .coffeepot .btn-group-vertical > .btn + .btn,
+  .coffeepot .btn-group-vertical > .btn + .btn-group,
+  .coffeepot .btn-group-vertical > .btn-group + .btn,
+  .coffeepot .btn-group-vertical > .btn-group + .btn-group {
+    margin-top: -1px;
+    margin-left: 0; }
+  .coffeepot .btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  .coffeepot .btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .coffeepot .btn-group-vertical > .btn:last-child:not(:first-child) {
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .coffeepot .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0; }
+  .coffeepot .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+  .coffeepot .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .coffeepot .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .coffeepot [data-toggle="buttons"] > .btn input[type="radio"],
+  .coffeepot [data-toggle="buttons"] > .btn input[type="checkbox"],
+  .coffeepot [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+  .coffeepot [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
+  .coffeepot .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate; }
+    .coffeepot .input-group .form-control {
+      position: relative;
+      z-index: 2;
+      float: left;
+      width: 100%;
+      margin-bottom: 0; }
+  .coffeepot .input-group-addon,
+  .coffeepot .input-group-btn,
+  .coffeepot .input-group .form-control {
+    display: table-cell; }
+    .coffeepot .input-group-addon:not(:first-child):not(:last-child),
+    .coffeepot .input-group-btn:not(:first-child):not(:last-child),
+    .coffeepot .input-group .form-control:not(:first-child):not(:last-child) {
+      border-radius: 0; }
+  .coffeepot .input-group-addon,
+  .coffeepot .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle; }
+  .coffeepot .input-group-addon {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1;
+    color: #55595c;
+    text-align: center;
+    background-color: #eceeef;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem; }
+    .coffeepot .input-group-addon.form-control-sm,
+    .coffeepot .input-group-sm > .input-group-addon,
+    .coffeepot .input-group-sm > .input-group-btn > .input-group-addon.btn {
+      padding: 0.275rem 0.75rem;
+      font-size: 0.85rem;
+      border-radius: 0.2rem; }
+    .coffeepot .input-group-addon.form-control-lg,
+    .coffeepot .input-group-lg > .input-group-addon,
+    .coffeepot .input-group-lg > .input-group-btn > .input-group-addon.btn {
+      padding: 1.25rem 1.25rem;
+      font-size: 1.25rem;
+      border-radius: 0.3rem; }
+    .coffeepot .input-group-addon input[type="radio"],
+    .coffeepot .input-group-addon input[type="checkbox"] {
+      margin-top: 0; }
+  .coffeepot .input-group .form-control:first-child,
+  .coffeepot .input-group-addon:first-child,
+  .coffeepot .input-group-btn:first-child > .btn,
+  .coffeepot .input-group-btn:first-child > .btn-group > .btn,
+  .coffeepot .input-group-btn:first-child > .dropdown-toggle,
+  .coffeepot .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+  .coffeepot .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .coffeepot .input-group-addon:first-child {
+    border-right: 0; }
+  .coffeepot .input-group .form-control:last-child,
+  .coffeepot .input-group-addon:last-child,
+  .coffeepot .input-group-btn:last-child > .btn,
+  .coffeepot .input-group-btn:last-child > .btn-group > .btn,
+  .coffeepot .input-group-btn:last-child > .dropdown-toggle,
+  .coffeepot .input-group-btn:first-child > .btn:not(:first-child),
+  .coffeepot .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+  .coffeepot .input-group-addon:last-child {
+    border-left: 0; }
+  .coffeepot .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap; }
+    .coffeepot .input-group-btn > .btn {
+      position: relative; }
+      .coffeepot .input-group-btn > .btn + .btn {
+        margin-left: -1px; }
+      .coffeepot .input-group-btn > .btn:focus, .coffeepot .input-group-btn > .btn:active, .coffeepot .input-group-btn > .btn:hover {
+        z-index: 2; }
+    .coffeepot .input-group-btn:first-child > .btn,
+    .coffeepot .input-group-btn:first-child > .btn-group {
+      margin-right: -1px; }
+    .coffeepot .input-group-btn:last-child > .btn,
+    .coffeepot .input-group-btn:last-child > .btn-group {
+      z-index: 2;
+      margin-left: -1px; }
+  .coffeepot .c-input {
+    position: relative;
+    display: inline;
+    padding-left: 1.5rem;
+    color: #555;
+    cursor: pointer; }
+    .coffeepot .c-input > input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0; }
+      .coffeepot .c-input > input:checked ~ .c-indicator {
+        color: #fff;
+        background-color: #0074d9; }
+      .coffeepot .c-input > input:active ~ .c-indicator {
+        color: #fff;
+        background-color: #84c6ff; }
+    .coffeepot .c-input + .c-input {
+      margin-left: 1rem; }
+  .coffeepot .c-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    font-size: 65%;
+    line-height: 1rem;
+    color: #eee;
+    text-align: center;
+    user-select: none;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%; }
+  .coffeepot .c-checkbox .c-indicator {
+    border-radius: .25rem; }
+  .coffeepot .c-checkbox input:checked ~ .c-indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=); }
+  .coffeepot .c-checkbox input:indeterminate ~ .c-indicator {
+    background-color: #0074d9;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K); }
+  .coffeepot .c-radio .c-indicator {
+    border-radius: 50%; }
+  .coffeepot .c-radio input:checked ~ .c-indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==); }
+  .coffeepot .c-inputs-stacked .c-input {
+    display: inline; }
+    .coffeepot .c-inputs-stacked .c-input:after {
+      display: block;
+      margin-bottom: .25rem;
+      content: ""; }
+    .coffeepot .c-inputs-stacked .c-input + .c-input {
+      margin-left: 0; }
+  .coffeepot .c-select {
+    display: inline-block;
+    max-width: 100%;
+    padding: .375rem 1.75rem .375rem .75rem;
+    vertical-align: middle;
+    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: .75rem \9;
+    background-image: none \9; }
+    .coffeepot .c-select:focus {
+      outline: none;
+      border-color: #51a7e8;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5); }
+    .coffeepot .c-select::-ms-expand {
+      opacity: 0; }
+  .coffeepot .c-select-sm {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px; }
+    .coffeepot .c-select-sm:not([multiple]) {
+      height: 26px;
+      min-height: 26px; }
+  .coffeepot .file {
+    position: relative;
+    display: inline-block;
+    height: 2.5rem;
+    cursor: pointer; }
+  .coffeepot .file input {
+    min-width: 14rem;
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0; }
+  .coffeepot .file-custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    user-select: none;
+    background-color: #fff;
+    border: .075rem solid #ddd;
+    border-radius: .25rem;
+    box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05); }
+  .coffeepot .file-custom:after {
+    content: "Choose file..."; }
+  .coffeepot .file-custom:before {
+    position: absolute;
+    top: -.075rem;
+    right: -.075rem;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    content: "Browse";
+    background-color: #eee;
+    border: .075rem solid #ddd;
+    border-radius: 0 .25rem .25rem 0; }
+  .coffeepot .file input:focus ~ .file-custom {
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9; }
+  .coffeepot .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+  .coffeepot .nav-link {
+    display: inline-block; }
+    .coffeepot .nav-link:focus, .coffeepot .nav-link:hover {
+      text-decoration: none; }
+    .coffeepot .nav-link.disabled {
+      color: #818a91; }
+      .coffeepot .nav-link.disabled, .coffeepot .nav-link.disabled:focus, .coffeepot .nav-link.disabled:hover {
+        color: #818a91;
+        cursor: not-allowed;
+        background-color: transparent; }
+  .coffeepot .nav-inline .nav-link + .nav-link {
+    margin-left: 1rem; }
+  .coffeepot .nav-tabs {
+    border-bottom: 1px solid #ddd; }
+    .coffeepot .nav-tabs:before, .coffeepot .nav-tabs:after {
+      content: " ";
+      display: table; }
+    .coffeepot .nav-tabs:after {
+      clear: both; }
+    .coffeepot .nav-tabs .nav-item {
+      float: left;
+      margin-bottom: -1px; }
+      .coffeepot .nav-tabs .nav-item + .nav-item {
+        margin-left: .2rem; }
+    .coffeepot .nav-tabs .nav-link {
+      display: block;
+      padding: 0.5em 1em;
+      border: 1px solid transparent;
+      border-radius: 0.25rem 0.25rem 0 0; }
+      .coffeepot .nav-tabs .nav-link:focus, .coffeepot .nav-tabs .nav-link:hover {
+        border-color: #eceeef #eceeef #ddd; }
+      .coffeepot .nav-tabs .nav-link.disabled, .coffeepot .nav-tabs .nav-link.disabled:focus, .coffeepot .nav-tabs .nav-link.disabled:hover {
+        color: #818a91;
+        background-color: transparent;
+        border-color: transparent; }
+    .coffeepot .nav-tabs .nav-link.active, .coffeepot .nav-tabs .nav-link.active:focus, .coffeepot .nav-tabs .nav-link.active:hover,
+    .coffeepot .nav-tabs .nav-item.open .nav-link,
+    .coffeepot .nav-tabs .nav-item.open .nav-link:focus,
+    .coffeepot .nav-tabs .nav-item.open .nav-link:hover {
+      color: #55595c;
+      background-color: #fff;
+      border-color: #ddd #ddd transparent; }
+  .coffeepot .nav-pills .nav-item {
+    float: left; }
+    .coffeepot .nav-pills .nav-item + .nav-item {
+      margin-left: .2rem; }
+  .coffeepot .nav-pills .nav-link {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 0.25rem; }
+  .coffeepot .nav-pills .nav-link.active, .coffeepot .nav-pills .nav-link.active:focus, .coffeepot .nav-pills .nav-link.active:hover,
+  .coffeepot .nav-pills .nav-item.open .nav-link,
+  .coffeepot .nav-pills .nav-item.open .nav-link:focus,
+  .coffeepot .nav-pills .nav-item.open .nav-link:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #0275d8; }
+  .coffeepot .nav-stacked .nav-item {
+    display: block;
+    float: none; }
+    .coffeepot .nav-stacked .nav-item + .nav-item {
+      margin-top: .2rem;
+      margin-left: 0; }
+  .coffeepot .tab-content > .tab-pane {
+    display: none; }
+  .coffeepot .tab-content > .active {
+    display: block; }
+  .coffeepot .nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .coffeepot .navbar {
+    position: relative;
+    padding: 0.5rem 1rem; }
+    .coffeepot .navbar:before, .coffeepot .navbar:after {
+      content: " ";
+      display: table; }
+    .coffeepot .navbar:after {
+      clear: both; }
+    @media (min-width: 34em) {
+      .coffeepot .navbar {
+        border-radius: 0.25rem; } }
+  .coffeepot .navbar-static-top {
+    z-index: 1000; }
+    @media (min-width: 34em) {
+      .coffeepot .navbar-static-top {
+        border-radius: 0; } }
+  .coffeepot .navbar-fixed-top,
+  .coffeepot .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0; }
+    @media (min-width: 34em) {
+      .coffeepot .navbar-fixed-top,
+      .coffeepot .navbar-fixed-bottom {
+        border-radius: 0; } }
+  .coffeepot .navbar-fixed-top {
+    top: 0; }
+  .coffeepot .navbar-fixed-bottom {
+    bottom: 0; }
+  .coffeepot .navbar-sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    width: 100%; }
+    @media (min-width: 34em) {
+      .coffeepot .navbar-sticky-top {
+        border-radius: 0; } }
+  .coffeepot .navbar-brand {
+    float: left;
+    margin-right: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 1.25rem; }
+    .coffeepot .navbar-brand:focus, .coffeepot .navbar-brand:hover {
+      text-decoration: none; }
+    .coffeepot .navbar-brand > img {
+      display: block; }
+  .coffeepot .navbar-divider {
+    float: left;
+    width: 1px;
+    padding-top: .425rem;
+    padding-bottom: .425rem;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    .coffeepot .navbar-divider:before {
+      content: '\00a0'; }
+  .coffeepot .navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: none;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.25rem; }
+    .coffeepot .navbar-toggler:focus, .coffeepot .navbar-toggler:hover {
+      text-decoration: none; }
+  @media (min-width: 34em) {
+    .coffeepot .navbar-toggleable-xs {
+      display: block !important; } }
+  @media (min-width: 48em) {
+    .coffeepot .navbar-toggleable-sm {
+      display: block !important; } }
+  .coffeepot .navbar-nav .nav-item {
+    float: left; }
+  .coffeepot .navbar-nav .nav-link {
+    display: block;
+    padding-top: .425rem;
+    padding-bottom: .425rem; }
+    .coffeepot .navbar-nav .nav-link + .nav-link {
+      margin-left: 1rem; }
+  .coffeepot .navbar-nav .nav-item + .nav-item {
+    margin-left: 1rem; }
+  .coffeepot .navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.8); }
+    .coffeepot .navbar-light .navbar-brand:focus, .coffeepot .navbar-light .navbar-brand:hover {
+      color: rgba(0, 0, 0, 0.8); }
+  .coffeepot .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.3); }
+    .coffeepot .navbar-light .navbar-nav .nav-link:focus, .coffeepot .navbar-light .navbar-nav .nav-link:hover {
+      color: rgba(0, 0, 0, 0.6); }
+  .coffeepot .navbar-light .navbar-nav .open > .nav-link, .coffeepot .navbar-light .navbar-nav .open > .nav-link:focus, .coffeepot .navbar-light .navbar-nav .open > .nav-link:hover,
+  .coffeepot .navbar-light .navbar-nav .active > .nav-link,
+  .coffeepot .navbar-light .navbar-nav .active > .nav-link:focus,
+  .coffeepot .navbar-light .navbar-nav .active > .nav-link:hover,
+  .coffeepot .navbar-light .navbar-nav .nav-link.open,
+  .coffeepot .navbar-light .navbar-nav .nav-link.open:focus,
+  .coffeepot .navbar-light .navbar-nav .nav-link.open:hover,
+  .coffeepot .navbar-light .navbar-nav .nav-link.active,
+  .coffeepot .navbar-light .navbar-nav .nav-link.active:focus,
+  .coffeepot .navbar-light .navbar-nav .nav-link.active:hover {
+    color: rgba(0, 0, 0, 0.8); }
+  .coffeepot .navbar-light .navbar-divider {
+    background-color: rgba(0, 0, 0, 0.075); }
+  .coffeepot .navbar-dark .navbar-brand {
+    color: white; }
+    .coffeepot .navbar-dark .navbar-brand:focus, .coffeepot .navbar-dark .navbar-brand:hover {
+      color: white; }
+  .coffeepot .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5); }
+    .coffeepot .navbar-dark .navbar-nav .nav-link:focus, .coffeepot .navbar-dark .navbar-nav .nav-link:hover {
+      color: rgba(255, 255, 255, 0.75); }
+  .coffeepot .navbar-dark .navbar-nav .open > .nav-link, .coffeepot .navbar-dark .navbar-nav .open > .nav-link:focus, .coffeepot .navbar-dark .navbar-nav .open > .nav-link:hover,
+  .coffeepot .navbar-dark .navbar-nav .active > .nav-link,
+  .coffeepot .navbar-dark .navbar-nav .active > .nav-link:focus,
+  .coffeepot .navbar-dark .navbar-nav .active > .nav-link:hover,
+  .coffeepot .navbar-dark .navbar-nav .nav-link.open,
+  .coffeepot .navbar-dark .navbar-nav .nav-link.open:focus,
+  .coffeepot .navbar-dark .navbar-nav .nav-link.open:hover,
+  .coffeepot .navbar-dark .navbar-nav .nav-link.active,
+  .coffeepot .navbar-dark .navbar-nav .nav-link.active:focus,
+  .coffeepot .navbar-dark .navbar-nav .nav-link.active:hover {
+    color: white; }
+  .coffeepot .navbar-dark .navbar-divider {
+    background-color: rgba(255, 255, 255, 0.075); }
+  .coffeepot .card {
+    position: relative;
+    margin-bottom: 0.75rem;
+    border: 0.0625rem solid #e5e5e5;
+    border-radius: 0.25rem; }
+  .coffeepot .card-block {
+    padding: 1.25rem; }
+  .coffeepot .card-title {
+    margin-top: 0;
+    margin-bottom: 0.75rem; }
+  .coffeepot .card-subtitle {
+    margin-top: -0.375rem;
+    margin-bottom: 0; }
+  .coffeepot .card-text:last-child {
+    margin-bottom: 0; }
+  .coffeepot .card-link:hover {
+    text-decoration: none; }
+  .coffeepot .card-link + .card-link {
+    margin-left: 1.25rem; }
+  .coffeepot .card > .list-group:first-child .list-group-item:first-child {
+    border-radius: 0.25rem 0.25rem 0 0; }
+  .coffeepot .card > .list-group:last-child .list-group-item:last-child {
+    border-radius: 0 0 0.25rem 0.25rem; }
+  .coffeepot .card-header {
+    padding: 0.75rem 1.25rem;
+    background-color: #f5f5f5;
+    border-bottom: 0.0625rem solid #e5e5e5; }
+    .coffeepot .card-header:first-child {
+      border-radius: 0.1875rem 0.1875rem 0 0; }
+  .coffeepot .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #f5f5f5;
+    border-top: 0.0625rem solid #e5e5e5; }
+    .coffeepot .card-footer:last-child {
+      border-radius: 0 0 0.1875rem 0.1875rem; }
+  .coffeepot .card-primary {
+    background-color: #0275d8;
+    border-color: #0275d8; }
+  .coffeepot .card-success {
+    background-color: #5cb85c;
+    border-color: #5cb85c; }
+  .coffeepot .card-info {
+    background-color: #5bc0de;
+    border-color: #5bc0de; }
+  .coffeepot .card-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e; }
+  .coffeepot .card-danger {
+    background-color: #d9534f;
+    border-color: #d9534f; }
+  .coffeepot .card-inverse .card-header,
+  .coffeepot .card-inverse .card-footer {
+    border-bottom: 0.075rem solid rgba(255, 255, 255, 0.2); }
+  .coffeepot .card-inverse .card-header,
+  .coffeepot .card-inverse .card-footer,
+  .coffeepot .card-inverse .card-title,
+  .coffeepot .card-inverse .card-blockquote {
+    color: #fff; }
+  .coffeepot .card-inverse .card-link,
+  .coffeepot .card-inverse .card-text,
+  .coffeepot .card-inverse .card-blockquote > footer {
+    color: rgba(255, 255, 255, 0.65); }
+  .coffeepot .card-inverse .card-link:focus, .coffeepot .card-inverse .card-link:hover {
+    color: #fff; }
+  .coffeepot .card-blockquote {
+    padding: 0;
+    margin-bottom: 0;
+    border-left: 0; }
+  .coffeepot .card-img {
+    border-radius: 0.25rem; }
+  .coffeepot .card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem; }
+  .coffeepot .card-img-top {
+    border-radius: 0.25rem 0.25rem 0 0; }
+  .coffeepot .card-img-bottom {
+    border-radius: 0 0 0.25rem 0.25rem; }
+  .coffeepot .card-deck {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 1.25rem 0; }
+    .coffeepot .card-deck .card {
+      display: table-cell;
+      width: 1%;
+      vertical-align: top; }
+  .coffeepot .card-deck-wrapper {
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; }
+  .coffeepot .card-group {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .coffeepot .card-group .card {
+      display: table-cell;
+      vertical-align: top; }
+      .coffeepot .card-group .card + .card {
+        margin-left: 0;
+        border-left: 0; }
+      .coffeepot .card-group .card:first-child .card-img-top {
+        border-top-right-radius: 0; }
+      .coffeepot .card-group .card:first-child .card-img-bottom {
+        border-bottom-right-radius: 0; }
+      .coffeepot .card-group .card:last-child .card-img-top {
+        border-top-left-radius: 0; }
+      .coffeepot .card-group .card:last-child .card-img-bottom {
+        border-bottom-left-radius: 0; }
+      .coffeepot .card-group .card:not(:first-child):not(:last-child) {
+        border-radius: 0; }
+        .coffeepot .card-group .card:not(:first-child):not(:last-child) .card-img-top,
+        .coffeepot .card-group .card:not(:first-child):not(:last-child) .card-img-bottom {
+          border-radius: 0; }
+  .coffeepot .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem; }
+    .coffeepot .card-columns .card {
+      display: inline-block;
+      width: 100%; }
+  .coffeepot .breadcrumb {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #eceeef;
+    border-radius: 0.25rem; }
+    .coffeepot .breadcrumb > li {
+      display: inline-block; }
+      .coffeepot .breadcrumb > li + li:before {
+        padding-right: .5rem;
+        padding-left: .5rem;
+        color: #818a91;
+        content: "/ "; }
+    .coffeepot .breadcrumb > .active {
+      color: #818a91; }
+  .coffeepot .pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem; }
+    .coffeepot .pagination > li {
+      display: inline; }
+      .coffeepot .pagination > li > a,
+      .coffeepot .pagination > li > span {
+        position: relative;
+        float: left;
+        padding: 0.5rem 0.75rem;
+        margin-left: -1px;
+        line-height: 1.5;
+        color: #0275d8;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd; }
+      .coffeepot .pagination > li:first-child > a,
+      .coffeepot .pagination > li:first-child > span {
+        margin-left: 0;
+        border-bottom-left-radius: 0.25rem;
+        border-top-left-radius: 0.25rem; }
+      .coffeepot .pagination > li:last-child > a,
+      .coffeepot .pagination > li:last-child > span {
+        border-bottom-right-radius: 0.25rem;
+        border-top-right-radius: 0.25rem; }
+    .coffeepot .pagination > li > a:focus, .coffeepot .pagination > li > a:hover,
+    .coffeepot .pagination > li > span:focus,
+    .coffeepot .pagination > li > span:hover {
+      color: #014c8c;
+      background-color: #eceeef;
+      border-color: #ddd; }
+    .coffeepot .pagination > .active > a, .coffeepot .pagination > .active > a:focus, .coffeepot .pagination > .active > a:hover,
+    .coffeepot .pagination > .active > span,
+    .coffeepot .pagination > .active > span:focus,
+    .coffeepot .pagination > .active > span:hover {
+      z-index: 2;
+      color: #fff;
+      cursor: default;
+      background-color: #0275d8;
+      border-color: #0275d8; }
+    .coffeepot .pagination > .disabled > span, .coffeepot .pagination > .disabled > span:focus, .coffeepot .pagination > .disabled > span:hover,
+    .coffeepot .pagination > .disabled > a,
+    .coffeepot .pagination > .disabled > a:focus,
+    .coffeepot .pagination > .disabled > a:hover {
+      color: #818a91;
+      cursor: not-allowed;
+      background-color: #fff;
+      border-color: #ddd; }
+  .coffeepot .pagination-lg > li > a,
+  .coffeepot .pagination-lg > li > span {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.33333; }
+  .coffeepot .pagination-lg > li:first-child > a,
+  .coffeepot .pagination-lg > li:first-child > span {
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem; }
+  .coffeepot .pagination-lg > li:last-child > a,
+  .coffeepot .pagination-lg > li:last-child > span {
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem; }
+  .coffeepot .pagination-sm > li > a,
+  .coffeepot .pagination-sm > li > span {
+    padding: 0.275rem 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5; }
+  .coffeepot .pagination-sm > li:first-child > a,
+  .coffeepot .pagination-sm > li:first-child > span {
+    border-bottom-left-radius: 0.2rem;
+    border-top-left-radius: 0.2rem; }
+  .coffeepot .pagination-sm > li:last-child > a,
+  .coffeepot .pagination-sm > li:last-child > span {
+    border-bottom-right-radius: 0.2rem;
+    border-top-right-radius: 0.2rem; }
+  .coffeepot .pager {
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    list-style: none; }
+    .coffeepot .pager:before, .coffeepot .pager:after {
+      content: " ";
+      display: table; }
+    .coffeepot .pager:after {
+      clear: both; }
+    .coffeepot .pager li {
+      display: inline; }
+      .coffeepot .pager li > a,
+      .coffeepot .pager li > span {
+        display: inline-block;
+        padding: 5px 14px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 15px; }
+      .coffeepot .pager li > a:focus, .coffeepot .pager li > a:hover {
+        text-decoration: none;
+        background-color: #eceeef; }
+    .coffeepot .pager .disabled > a, .coffeepot .pager .disabled > a:focus, .coffeepot .pager .disabled > a:hover {
+      color: #818a91;
+      cursor: not-allowed;
+      background-color: #fff; }
+    .coffeepot .pager .disabled > span {
+      color: #818a91;
+      cursor: not-allowed;
+      background-color: #fff; }
+  .coffeepot .pager-next > a,
+  .coffeepot .pager-next > span {
+    float: right; }
+  .coffeepot .pager-prev > a,
+  .coffeepot .pager-prev > span {
+    float: left; }
+  .coffeepot .label {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem; }
+    .coffeepot .label:empty {
+      display: none; }
+    .btn .coffeepot .label {
+      position: relative;
+      top: -1px; }
+  .coffeepot a.label:focus, .coffeepot a.label:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }
+  .coffeepot .label-pill {
+    padding-left: .6em;
+    padding-right: .6em;
+    border-radius: 1rem; }
+  .coffeepot .label-default {
+    background-color: #818a91; }
+    .coffeepot .label-default[href]:focus, .coffeepot .label-default[href]:hover {
+      background-color: #687077; }
+  .coffeepot .label-primary {
+    background-color: #0275d8; }
+    .coffeepot .label-primary[href]:focus, .coffeepot .label-primary[href]:hover {
+      background-color: #025aa5; }
+  .coffeepot .label-success {
+    background-color: #5cb85c; }
+    .coffeepot .label-success[href]:focus, .coffeepot .label-success[href]:hover {
+      background-color: #449d44; }
+  .coffeepot .label-info {
+    background-color: #5bc0de; }
+    .coffeepot .label-info[href]:focus, .coffeepot .label-info[href]:hover {
+      background-color: #31b0d5; }
+  .coffeepot .label-warning {
+    background-color: #f0ad4e; }
+    .coffeepot .label-warning[href]:focus, .coffeepot .label-warning[href]:hover {
+      background-color: #ec971f; }
+  .coffeepot .label-danger {
+    background-color: #d9534f; }
+    .coffeepot .label-danger[href]:focus, .coffeepot .label-danger[href]:hover {
+      background-color: #c9302c; }
+  .coffeepot .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #eceeef;
+    border-radius: 0.3rem; }
+  .coffeepot .jumbotron-hr {
+    border-top-color: #d0d5d8; }
+  @media (min-width: 34em) {
+    .coffeepot .jumbotron {
+      padding: 4rem 2rem; } }
+  .coffeepot .jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0; }
+  .coffeepot .alert {
+    padding: 15px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem; }
+    .coffeepot .alert > p,
+    .coffeepot .alert > ul {
+      margin-bottom: 0; }
+    .coffeepot .alert > p + p {
+      margin-top: 5px; }
+  .coffeepot .alert-heading {
+    margin-top: 0;
+    color: inherit; }
+  .coffeepot .alert-link {
+    font-weight: bold; }
+  .coffeepot .alert-dismissible {
+    padding-right: 35px; }
+    .coffeepot .alert-dismissible .close {
+      position: relative;
+      top: -2px;
+      right: -21px;
+      color: inherit; }
+  .coffeepot .alert-success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d; }
+    .coffeepot .alert-success hr {
+      border-top-color: #c1e2b3; }
+    .coffeepot .alert-success .alert-link {
+      color: #2b542c; }
+  .coffeepot .alert-info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f; }
+    .coffeepot .alert-info hr {
+      border-top-color: #a6d5ec; }
+    .coffeepot .alert-info .alert-link {
+      color: #245269; }
+  .coffeepot .alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b; }
+    .coffeepot .alert-warning hr {
+      border-top-color: #f7ecb5; }
+    .coffeepot .alert-warning .alert-link {
+      color: #66512c; }
+  .coffeepot .alert-danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442; }
+    .coffeepot .alert-danger hr {
+      border-top-color: #e4b9b9; }
+    .coffeepot .alert-danger .alert-link {
+      color: #843534; }
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0; }
+  to {
+    background-position: 0 0; } }
+  .coffeepot .progress {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 1rem; }
+  .coffeepot .progress[value] {
+    color: #0074d9;
+    border: 0;
+    appearance: none; }
+  .coffeepot .progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 0.25rem; }
+  .coffeepot .progress[value]::-webkit-progress-value::before {
+    content: attr(value); }
+  .coffeepot .progress[value]::-webkit-progress-value {
+    background-color: #0074d9;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem; }
+  .coffeepot .progress[value="100"]::-webkit-progress-value {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress {
+      background-color: #eee;
+      border-radius: 0.25rem; }
+    .coffeepot .progress-bar {
+      display: inline-block;
+      height: 1rem;
+      text-indent: -999rem;
+      background-color: #0074d9;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem; }
+    .coffeepot .progress[width^="0"] {
+      min-width: 2rem;
+      color: #818a91;
+      background-color: transparent;
+      background-image: none; }
+    .coffeepot .progress[width="100%"] {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem; } }
+  .coffeepot .progress-striped[value]::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem; }
+  .coffeepot .progress-striped[value]::-moz-progress-bar {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress-bar-striped {
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-size: 1rem 1rem; } }
+  .coffeepot .progress-animated[value]::-webkit-progress-value {
+    animation: progress-bar-stripes 2s linear infinite; }
+  .coffeepot .progress-animated[value]::-moz-progress-bar {
+    animation: progress-bar-stripes 2s linear infinite; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress-animated .progress-bar-striped {
+      animation: progress-bar-stripes 2s linear infinite; } }
+  .coffeepot .progress-success[value]::-webkit-progress-value {
+    background-color: #5cb85c; }
+  .coffeepot .progress-success[value]::-moz-progress-bar {
+    background-color: #5cb85c; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress-success .progress-bar {
+      background-color: #5cb85c; } }
+  .coffeepot .progress-info[value]::-webkit-progress-value {
+    background-color: #5bc0de; }
+  .coffeepot .progress-info[value]::-moz-progress-bar {
+    background-color: #5bc0de; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress-info .progress-bar {
+      background-color: #5bc0de; } }
+  .coffeepot .progress-warning[value]::-webkit-progress-value {
+    background-color: #f0ad4e; }
+  .coffeepot .progress-warning[value]::-moz-progress-bar {
+    background-color: #f0ad4e; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress-warning .progress-bar {
+      background-color: #f0ad4e; } }
+  .coffeepot .progress-danger[value]::-webkit-progress-value {
+    background-color: #d9534f; }
+  .coffeepot .progress-danger[value]::-moz-progress-bar {
+    background-color: #d9534f; }
+  @media screen and (min-width: 0\0) {
+    .coffeepot .progress-danger .progress-bar {
+      background-color: #d9534f; } }
+  .coffeepot .media {
+    margin-top: 15px; }
+    .coffeepot .media:first-child {
+      margin-top: 0; }
+  .coffeepot .media,
+  .coffeepot .media-body {
+    overflow: hidden;
+    zoom: 1; }
+  .coffeepot .media-body {
+    width: 10000px; }
+  .coffeepot .media-left,
+  .coffeepot .media-right,
+  .coffeepot .media-body {
+    display: table-cell;
+    vertical-align: top; }
+  .coffeepot .media-middle {
+    vertical-align: middle; }
+  .coffeepot .media-bottom {
+    vertical-align: bottom; }
+  .coffeepot .media-object {
+    display: block; }
+    .coffeepot .media-object.img-thumbnail {
+      max-width: none; }
+  .coffeepot .media-right {
+    padding-left: 10px; }
+  .coffeepot .media-left {
+    padding-right: 10px; }
+  .coffeepot .media-heading {
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .coffeepot .media-list {
+    padding-left: 0;
+    list-style: none; }
+  .coffeepot .list-group {
+    padding-left: 0;
+    margin-bottom: 0; }
+  .coffeepot .list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -.0625rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd; }
+    .coffeepot .list-group-item:first-child {
+      border-top-right-radius: 0.25rem;
+      border-top-left-radius: 0.25rem; }
+    .coffeepot .list-group-item:last-child {
+      margin-bottom: 0;
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem; }
+  .coffeepot .list-group-flush .list-group-item {
+    border-width: .0625rem 0;
+    border-radius: 0; }
+  .coffeepot a.list-group-item,
+  .coffeepot button.list-group-item {
+    width: 100%;
+    text-align: inherit;
+    color: #555; }
+    .coffeepot a.list-group-item .list-group-item-heading,
+    .coffeepot button.list-group-item .list-group-item-heading {
+      color: #333; }
+    .coffeepot a.list-group-item:focus, .coffeepot a.list-group-item:hover,
+    .coffeepot button.list-group-item:focus,
+    .coffeepot button.list-group-item:hover {
+      color: #555;
+      text-decoration: none;
+      background-color: #f5f5f5; }
+  .coffeepot .list-group-item.disabled, .coffeepot .list-group-item.disabled:focus, .coffeepot .list-group-item.disabled:hover {
+    color: #818a91;
+    cursor: not-allowed;
+    background-color: #eceeef; }
+    .coffeepot .list-group-item.disabled .list-group-item-heading, .coffeepot .list-group-item.disabled:focus .list-group-item-heading, .coffeepot .list-group-item.disabled:hover .list-group-item-heading {
+      color: inherit; }
+    .coffeepot .list-group-item.disabled .list-group-item-text, .coffeepot .list-group-item.disabled:focus .list-group-item-text, .coffeepot .list-group-item.disabled:hover .list-group-item-text {
+      color: #818a91; }
+  .coffeepot .list-group-item.active, .coffeepot .list-group-item.active:focus, .coffeepot .list-group-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8; }
+    .coffeepot .list-group-item.active .list-group-item-heading,
+    .coffeepot .list-group-item.active .list-group-item-heading > small,
+    .coffeepot .list-group-item.active .list-group-item-heading > .small, .coffeepot .list-group-item.active:focus .list-group-item-heading,
+    .coffeepot .list-group-item.active:focus .list-group-item-heading > small,
+    .coffeepot .list-group-item.active:focus .list-group-item-heading > .small, .coffeepot .list-group-item.active:hover .list-group-item-heading,
+    .coffeepot .list-group-item.active:hover .list-group-item-heading > small,
+    .coffeepot .list-group-item.active:hover .list-group-item-heading > .small {
+      color: inherit; }
+    .coffeepot .list-group-item.active .list-group-item-text, .coffeepot .list-group-item.active:focus .list-group-item-text, .coffeepot .list-group-item.active:hover .list-group-item-text {
+      color: #a8d6fe; }
+  .coffeepot .list-group-item-state {
+    color: #3c763d;
+    background-color: #dff0d8; }
+  .coffeepot a.list-group-item-state,
+  .coffeepot button.list-group-item-state {
+    color: #3c763d; }
+    .coffeepot a.list-group-item-state .list-group-item-heading,
+    .coffeepot button.list-group-item-state .list-group-item-heading {
+      color: inherit; }
+    .coffeepot a.list-group-item-state:focus, .coffeepot a.list-group-item-state:hover,
+    .coffeepot button.list-group-item-state:focus,
+    .coffeepot button.list-group-item-state:hover {
+      color: #3c763d;
+      background-color: #d0e9c6; }
+    .coffeepot a.list-group-item-state.active, .coffeepot a.list-group-item-state.active:focus, .coffeepot a.list-group-item-state.active:hover,
+    .coffeepot button.list-group-item-state.active,
+    .coffeepot button.list-group-item-state.active:focus,
+    .coffeepot button.list-group-item-state.active:hover {
+      color: #fff;
+      background-color: #3c763d;
+      border-color: #3c763d; }
+  .coffeepot .list-group-item-state {
+    color: #31708f;
+    background-color: #d9edf7; }
+  .coffeepot a.list-group-item-state,
+  .coffeepot button.list-group-item-state {
+    color: #31708f; }
+    .coffeepot a.list-group-item-state .list-group-item-heading,
+    .coffeepot button.list-group-item-state .list-group-item-heading {
+      color: inherit; }
+    .coffeepot a.list-group-item-state:focus, .coffeepot a.list-group-item-state:hover,
+    .coffeepot button.list-group-item-state:focus,
+    .coffeepot button.list-group-item-state:hover {
+      color: #31708f;
+      background-color: #c4e3f3; }
+    .coffeepot a.list-group-item-state.active, .coffeepot a.list-group-item-state.active:focus, .coffeepot a.list-group-item-state.active:hover,
+    .coffeepot button.list-group-item-state.active,
+    .coffeepot button.list-group-item-state.active:focus,
+    .coffeepot button.list-group-item-state.active:hover {
+      color: #fff;
+      background-color: #31708f;
+      border-color: #31708f; }
+  .coffeepot .list-group-item-state {
+    color: #8a6d3b;
+    background-color: #fcf8e3; }
+  .coffeepot a.list-group-item-state,
+  .coffeepot button.list-group-item-state {
+    color: #8a6d3b; }
+    .coffeepot a.list-group-item-state .list-group-item-heading,
+    .coffeepot button.list-group-item-state .list-group-item-heading {
+      color: inherit; }
+    .coffeepot a.list-group-item-state:focus, .coffeepot a.list-group-item-state:hover,
+    .coffeepot button.list-group-item-state:focus,
+    .coffeepot button.list-group-item-state:hover {
+      color: #8a6d3b;
+      background-color: #faf2cc; }
+    .coffeepot a.list-group-item-state.active, .coffeepot a.list-group-item-state.active:focus, .coffeepot a.list-group-item-state.active:hover,
+    .coffeepot button.list-group-item-state.active,
+    .coffeepot button.list-group-item-state.active:focus,
+    .coffeepot button.list-group-item-state.active:hover {
+      color: #fff;
+      background-color: #8a6d3b;
+      border-color: #8a6d3b; }
+  .coffeepot .list-group-item-state {
+    color: #a94442;
+    background-color: #f2dede; }
+  .coffeepot a.list-group-item-state,
+  .coffeepot button.list-group-item-state {
+    color: #a94442; }
+    .coffeepot a.list-group-item-state .list-group-item-heading,
+    .coffeepot button.list-group-item-state .list-group-item-heading {
+      color: inherit; }
+    .coffeepot a.list-group-item-state:focus, .coffeepot a.list-group-item-state:hover,
+    .coffeepot button.list-group-item-state:focus,
+    .coffeepot button.list-group-item-state:hover {
+      color: #a94442;
+      background-color: #ebcccc; }
+    .coffeepot a.list-group-item-state.active, .coffeepot a.list-group-item-state.active:focus, .coffeepot a.list-group-item-state.active:hover,
+    .coffeepot button.list-group-item-state.active,
+    .coffeepot button.list-group-item-state.active:focus,
+    .coffeepot button.list-group-item-state.active:hover {
+      color: #fff;
+      background-color: #a94442;
+      border-color: #a94442; }
+  .coffeepot .list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .coffeepot .list-group-item-text {
+    margin-bottom: 0;
+    line-height: 1.3; }
+  .coffeepot .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden; }
+    .coffeepot .embed-responsive .embed-responsive-item,
+    .coffeepot .embed-responsive iframe,
+    .coffeepot .embed-responsive embed,
+    .coffeepot .embed-responsive object,
+    .coffeepot .embed-responsive video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0; }
+  .coffeepot .embed-responsive-21by9 {
+    padding-bottom: 42.85714%; }
+  .coffeepot .embed-responsive-16by9 {
+    padding-bottom: 56.25%; }
+  .coffeepot .embed-responsive-4by3 {
+    padding-bottom: 75%; }
+  .coffeepot .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2; }
+    .coffeepot .close:focus, .coffeepot .close:hover {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: .5; }
+  .coffeepot button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none; }
+  .coffeepot .modal-open {
+    overflow: hidden; }
+  .coffeepot .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch; }
+    .coffeepot .modal.fade .modal-dialog {
+      transform: translate(0, -25%);
+      transition: transform .3s ease-out; }
+    .coffeepot .modal.in .modal-dialog {
+      transform: translate(0, 0); }
+  .coffeepot .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .coffeepot .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px; }
+  .coffeepot .modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0; }
+  .coffeepot .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000; }
+    .coffeepot .modal-backdrop.fade {
+      opacity: 0; }
+    .coffeepot .modal-backdrop.in {
+      opacity: 0.5; }
+  .coffeepot .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5; }
+    .coffeepot .modal-header:before, .coffeepot .modal-header:after {
+      content: " ";
+      display: table; }
+    .coffeepot .modal-header:after {
+      clear: both; }
+  .coffeepot .modal-header .close {
+    margin-top: -2px; }
+  .coffeepot .modal-title {
+    margin: 0;
+    line-height: 1.5; }
+  .coffeepot .modal-body {
+    position: relative;
+    padding: 15px; }
+  .coffeepot .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5; }
+    .coffeepot .modal-footer:before, .coffeepot .modal-footer:after {
+      content: " ";
+      display: table; }
+    .coffeepot .modal-footer:after {
+      clear: both; }
+    .coffeepot .modal-footer .btn + .btn {
+      margin-bottom: 0;
+      margin-left: 5px; }
+    .coffeepot .modal-footer .btn-group .btn + .btn {
+      margin-left: -1px; }
+    .coffeepot .modal-footer .btn-block + .btn-block {
+      margin-left: 0; }
+  .coffeepot .modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll; }
+  @media (min-width: 34em) {
+    .coffeepot .modal-dialog {
+      width: 600px;
+      margin: 30px auto; }
+    .coffeepot .modal-sm {
+      width: 300px; } }
+  @media (min-width: 48em) {
+    .coffeepot .modal-lg {
+      width: 900px; } }
+  .coffeepot .tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    font-size: 0.85rem;
+    opacity: 0; }
+    .coffeepot .tooltip.in {
+      opacity: 0.9; }
+    .coffeepot .tooltip.tooltip-top, .coffeepot .tooltip.bs-tether-element-attached-bottom {
+      padding: 5px 0;
+      margin-top: -3px; }
+      .coffeepot .tooltip.tooltip-top .tooltip-arrow, .coffeepot .tooltip.bs-tether-element-attached-bottom .tooltip-arrow {
+        bottom: 0;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px 5px 0;
+        border-top-color: #000; }
+    .coffeepot .tooltip.tooltip-right, .coffeepot .tooltip.bs-tether-element-attached-left {
+      padding: 0 5px;
+      margin-left: 3px; }
+      .coffeepot .tooltip.tooltip-right .tooltip-arrow, .coffeepot .tooltip.bs-tether-element-attached-left .tooltip-arrow {
+        top: 50%;
+        left: 0;
+        margin-top: -5px;
+        border-width: 5px 5px 5px 0;
+        border-right-color: #000; }
+    .coffeepot .tooltip.tooltip-bottom, .coffeepot .tooltip.bs-tether-element-attached-top {
+      padding: 5px 0;
+      margin-top: 3px; }
+      .coffeepot .tooltip.tooltip-bottom .tooltip-arrow, .coffeepot .tooltip.bs-tether-element-attached-top .tooltip-arrow {
+        top: 0;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 0 5px 5px;
+        border-bottom-color: #000; }
+    .coffeepot .tooltip.tooltip-left, .coffeepot .tooltip.bs-tether-element-attached-right {
+      padding: 0 5px;
+      margin-left: -3px; }
+      .coffeepot .tooltip.tooltip-left .tooltip-arrow, .coffeepot .tooltip.bs-tether-element-attached-right .tooltip-arrow {
+        top: 50%;
+        right: 0;
+        margin-top: -5px;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #000; }
+  .coffeepot .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 0.25rem; }
+  .coffeepot .tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid; }
+  .coffeepot .popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: block;
+    max-width: 276px;
+    padding: 1px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    font-size: 0.85rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem; }
+    .coffeepot .popover.popover-top, .coffeepot .popover.bs-tether-element-attached-bottom {
+      margin-top: -10px; }
+      .coffeepot .popover.popover-top .popover-arrow, .coffeepot .popover.bs-tether-element-attached-bottom .popover-arrow {
+        bottom: -11px;
+        left: 50%;
+        margin-left: -11px;
+        border-top-color: rgba(0, 0, 0, 0.25);
+        border-bottom-width: 0; }
+        .coffeepot .popover.popover-top .popover-arrow:after, .coffeepot .popover.bs-tether-element-attached-bottom .popover-arrow:after {
+          bottom: 1px;
+          margin-left: -10px;
+          content: "";
+          border-top-color: #fff;
+          border-bottom-width: 0; }
+    .coffeepot .popover.popover-right, .coffeepot .popover.bs-tether-element-attached-left {
+      margin-left: 10px; }
+      .coffeepot .popover.popover-right .popover-arrow, .coffeepot .popover.bs-tether-element-attached-left .popover-arrow {
+        top: 50%;
+        left: -11px;
+        margin-top: -11px;
+        border-right-color: rgba(0, 0, 0, 0.25);
+        border-left-width: 0; }
+        .coffeepot .popover.popover-right .popover-arrow:after, .coffeepot .popover.bs-tether-element-attached-left .popover-arrow:after {
+          bottom: -10px;
+          left: 1px;
+          content: "";
+          border-right-color: #fff;
+          border-left-width: 0; }
+    .coffeepot .popover.popover-bottom, .coffeepot .popover.bs-tether-element-attached-top {
+      margin-top: 10px; }
+      .coffeepot .popover.popover-bottom .popover-arrow, .coffeepot .popover.bs-tether-element-attached-top .popover-arrow {
+        top: -11px;
+        left: 50%;
+        margin-left: -11px;
+        border-top-width: 0;
+        border-bottom-color: rgba(0, 0, 0, 0.25); }
+        .coffeepot .popover.popover-bottom .popover-arrow:after, .coffeepot .popover.bs-tether-element-attached-top .popover-arrow:after {
+          top: 1px;
+          margin-left: -10px;
+          content: "";
+          border-top-width: 0;
+          border-bottom-color: #fff; }
+    .coffeepot .popover.popover-left, .coffeepot .popover.bs-tether-element-attached-right {
+      margin-left: -10px; }
+      .coffeepot .popover.popover-left .popover-arrow, .coffeepot .popover.bs-tether-element-attached-right .popover-arrow {
+        top: 50%;
+        right: -11px;
+        margin-top: -11px;
+        border-right-width: 0;
+        border-left-color: rgba(0, 0, 0, 0.25); }
+        .coffeepot .popover.popover-left .popover-arrow:after, .coffeepot .popover.bs-tether-element-attached-right .popover-arrow:after {
+          right: 1px;
+          bottom: -10px;
+          content: "";
+          border-right-width: 0;
+          border-left-color: #fff; }
+  .coffeepot .popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: -0.7rem -0.7rem 0 0; }
+  .coffeepot .popover-content {
+    padding: 9px 14px; }
+  .coffeepot .popover-arrow, .coffeepot .popover-arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid; }
+  .coffeepot .popover-arrow {
+    border-width: 11px; }
+  .coffeepot .popover-arrow:after {
+    content: "";
+    border-width: 10px; }
+  .coffeepot .carousel {
+    position: relative; }
+  .coffeepot .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    .coffeepot .carousel-inner > .carousel-item {
+      position: relative;
+      display: none;
+      transition: .6s ease-in-out left; }
+      .coffeepot .carousel-inner > .carousel-item > img,
+      .coffeepot .carousel-inner > .carousel-item > a > img {
+        line-height: 1; }
+      @media all and (transform-3d), (-webkit-transform-3d) {
+        .coffeepot .carousel-inner > .carousel-item {
+          transition: transform .6s ease-in-out;
+          backface-visibility: hidden;
+          perspective: 1000px; }
+          .coffeepot .carousel-inner > .carousel-item.next, .coffeepot .carousel-inner > .carousel-item.active.right {
+            left: 0;
+            transform: translate3d(100%, 0, 0); }
+          .coffeepot .carousel-inner > .carousel-item.prev, .coffeepot .carousel-inner > .carousel-item.active.left {
+            left: 0;
+            transform: translate3d(-100%, 0, 0); }
+          .coffeepot .carousel-inner > .carousel-item.next.left, .coffeepot .carousel-inner > .carousel-item.prev.right, .coffeepot .carousel-inner > .carousel-item.active {
+            left: 0;
+            transform: translate3d(0, 0, 0); } }
+    .coffeepot .carousel-inner > .active,
+    .coffeepot .carousel-inner > .next,
+    .coffeepot .carousel-inner > .prev {
+      display: block; }
+    .coffeepot .carousel-inner > .active {
+      left: 0; }
+    .coffeepot .carousel-inner > .next,
+    .coffeepot .carousel-inner > .prev {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+    .coffeepot .carousel-inner > .next {
+      left: 100%; }
+    .coffeepot .carousel-inner > .prev {
+      left: -100%; }
+    .coffeepot .carousel-inner > .next.left,
+    .coffeepot .carousel-inner > .prev.right {
+      left: 0; }
+    .coffeepot .carousel-inner > .active.left {
+      left: -100%; }
+    .coffeepot .carousel-inner > .active.right {
+      left: 100%; }
+  .coffeepot .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    opacity: 0.5; }
+    .coffeepot .carousel-control.left {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
+    .coffeepot .carousel-control.right {
+      right: 0;
+      left: auto;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
+    .coffeepot .carousel-control:focus, .coffeepot .carousel-control:hover {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9; }
+    .coffeepot .carousel-control .icon-prev,
+    .coffeepot .carousel-control .icon-next {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      font-family: serif;
+      line-height: 1; }
+    .coffeepot .carousel-control .icon-prev {
+      left: 50%;
+      margin-left: -10px; }
+    .coffeepot .carousel-control .icon-next {
+      right: 50%;
+      margin-right: -10px; }
+    .coffeepot .carousel-control .icon-prev:before {
+      content: "\2039"; }
+    .coffeepot .carousel-control .icon-next:before {
+      content: "\203a"; }
+  .coffeepot .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none; }
+    .coffeepot .carousel-indicators li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 1px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 10px; }
+    .coffeepot .carousel-indicators .active {
+      width: 12px;
+      height: 12px;
+      margin: 0;
+      background-color: #fff; }
+  .coffeepot .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+    .coffeepot .carousel-caption .btn {
+      text-shadow: none; }
+  @media (min-width: 34em) {
+    .coffeepot .carousel-control .icon-prev,
+    .coffeepot .carousel-control .icon-next {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      font-size: 30px; }
+    .coffeepot .carousel-control .icon-prev {
+      margin-left: -15px; }
+    .coffeepot .carousel-control .icon-next {
+      margin-right: -15px; }
+    .coffeepot .carousel-caption {
+      right: 20%;
+      left: 20%;
+      padding-bottom: 30px; }
+    .coffeepot .carousel-indicators {
+      bottom: 20px; } }
+  .coffeepot .clearfix:before, .coffeepot .clearfix:after {
+    content: " ";
+    display: table; }
+  .coffeepot .clearfix:after {
+    clear: both; }
+  .coffeepot .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .coffeepot .pull-right {
+    float: right !important; }
+  .coffeepot .pull-left {
+    float: left !important; }
+  .coffeepot .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  .coffeepot .sr-only-focusable:active, .coffeepot .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto; }
+  .coffeepot [hidden] {
+    display: none !important; }
+  .coffeepot .invisible {
+    visibility: hidden; }
+  .coffeepot .text-hide {
+    font: "0/0" a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0; }
+  .coffeepot .text-left {
+    text-align: left; }
+  .coffeepot .text-right {
+    text-align: right; }
+  .coffeepot .text-center {
+    text-align: center; }
+  .coffeepot .text-justify {
+    text-align: justify; }
+  .coffeepot .text-nowrap {
+    white-space: nowrap; }
+  .coffeepot .text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .coffeepot .text-xs-left {
+    text-align: left; }
+  .coffeepot .text-xs-right {
+    text-align: right; }
+  .coffeepot .text-xs-center {
+    text-align: center; }
+  @media (min-width: 34em) {
+    .coffeepot .text-sm-left {
+      text-align: left; }
+    .coffeepot .text-sm-right {
+      text-align: right; }
+    .coffeepot .text-sm-center {
+      text-align: center; } }
+  @media (min-width: 48em) {
+    .coffeepot .text-md-left {
+      text-align: left; }
+    .coffeepot .text-md-right {
+      text-align: right; }
+    .coffeepot .text-md-center {
+      text-align: center; } }
+  @media (min-width: 62em) {
+    .coffeepot .text-lg-left {
+      text-align: left; }
+    .coffeepot .text-lg-right {
+      text-align: right; }
+    .coffeepot .text-lg-center {
+      text-align: center; } }
+  @media (min-width: 75em) {
+    .coffeepot .text-xl-left {
+      text-align: left; }
+    .coffeepot .text-xl-right {
+      text-align: right; }
+    .coffeepot .text-xl-center {
+      text-align: center; } }
+  .coffeepot .text-lowercase {
+    text-transform: lowercase; }
+  .coffeepot .text-uppercase {
+    text-transform: uppercase; }
+  .coffeepot .text-capitalize {
+    text-transform: capitalize; }
+  .coffeepot .text-muted {
+    color: #818a91; }
+  .coffeepot .text-primary {
+    color: #0275d8; }
+  .coffeepot a.text-primary:focus, .coffeepot a.text-primary:hover {
+    color: #025aa5; }
+  .coffeepot .text-success {
+    color: #5cb85c; }
+  .coffeepot a.text-success:focus, .coffeepot a.text-success:hover {
+    color: #449d44; }
+  .coffeepot .text-info {
+    color: #5bc0de; }
+  .coffeepot a.text-info:focus, .coffeepot a.text-info:hover {
+    color: #31b0d5; }
+  .coffeepot .text-warning {
+    color: #f0ad4e; }
+  .coffeepot a.text-warning:focus, .coffeepot a.text-warning:hover {
+    color: #ec971f; }
+  .coffeepot .text-danger {
+    color: #d9534f; }
+  .coffeepot a.text-danger:focus, .coffeepot a.text-danger:hover {
+    color: #c9302c; }
+  .coffeepot .bg-inverse {
+    color: #eceeef;
+    background-color: #373a3c; }
+  .coffeepot .bg-faded {
+    background-color: #f7f7f9; }
+  .coffeepot .bg-primary {
+    color: #fff;
+    background-color: #0275d8; }
+  .coffeepot a.bg-primary:focus, .coffeepot a.bg-primary:hover {
+    background-color: #025aa5; }
+  .coffeepot .bg-success {
+    color: #fff;
+    background-color: #5cb85c; }
+  .coffeepot a.bg-success:focus, .coffeepot a.bg-success:hover {
+    background-color: #449d44; }
+  .coffeepot .bg-info {
+    color: #fff;
+    background-color: #5bc0de; }
+  .coffeepot a.bg-info:focus, .coffeepot a.bg-info:hover {
+    background-color: #31b0d5; }
+  .coffeepot .bg-warning {
+    color: #fff;
+    background-color: #f0ad4e; }
+  .coffeepot a.bg-warning:focus, .coffeepot a.bg-warning:hover {
+    background-color: #ec971f; }
+  .coffeepot .bg-danger {
+    color: #fff;
+    background-color: #d9534f; }
+  .coffeepot a.bg-danger:focus, .coffeepot a.bg-danger:hover {
+    background-color: #c9302c; }
+  .coffeepot .m-a-0 {
+    margin: 0 !important; }
+  .coffeepot .m-t-0 {
+    margin-top: 0 !important; }
+  .coffeepot .m-r-0 {
+    margin-right: 0 !important; }
+  .coffeepot .m-b-0 {
+    margin-bottom: 0 !important; }
+  .coffeepot .m-l-0 {
+    margin-left: 0 !important; }
+  .coffeepot .m-x-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+  .coffeepot .m-y-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; }
+  .coffeepot .m-a {
+    margin: 1rem !important; }
+  .coffeepot .m-t {
+    margin-top: 1rem !important; }
+  .coffeepot .m-r {
+    margin-right: 1rem !important; }
+  .coffeepot .m-b {
+    margin-bottom: 1rem !important; }
+  .coffeepot .m-l {
+    margin-left: 1rem !important; }
+  .coffeepot .m-x {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important; }
+  .coffeepot .m-y {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important; }
+  .coffeepot .m-x-auto {
+    margin-right: auto !important;
+    margin-left: auto !important; }
+  .coffeepot .m-a-md {
+    margin: 1.5rem !important; }
+  .coffeepot .m-t-md {
+    margin-top: 1.5rem !important; }
+  .coffeepot .m-r-md {
+    margin-right: 1.5rem !important; }
+  .coffeepot .m-b-md {
+    margin-bottom: 1.5rem !important; }
+  .coffeepot .m-l-md {
+    margin-left: 1.5rem !important; }
+  .coffeepot .m-x-md {
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important; }
+  .coffeepot .m-y-md {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important; }
+  .coffeepot .m-a-lg {
+    margin: 3rem !important; }
+  .coffeepot .m-t-lg {
+    margin-top: 3rem !important; }
+  .coffeepot .m-r-lg {
+    margin-right: 3rem !important; }
+  .coffeepot .m-b-lg {
+    margin-bottom: 3rem !important; }
+  .coffeepot .m-l-lg {
+    margin-left: 3rem !important; }
+  .coffeepot .m-x-lg {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important; }
+  .coffeepot .m-y-lg {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important; }
+  .coffeepot .p-a-0 {
+    padding: 0 !important; }
+  .coffeepot .p-t-0 {
+    padding-top: 0 !important; }
+  .coffeepot .p-r-0 {
+    padding-right: 0 !important; }
+  .coffeepot .p-b-0 {
+    padding-bottom: 0 !important; }
+  .coffeepot .p-l-0 {
+    padding-left: 0 !important; }
+  .coffeepot .p-x-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .coffeepot .p-y-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+  .coffeepot .p-a {
+    padding: 1rem !important; }
+  .coffeepot .p-t {
+    padding-top: 1rem !important; }
+  .coffeepot .p-r {
+    padding-right: 1rem !important; }
+  .coffeepot .p-b {
+    padding-bottom: 1rem !important; }
+  .coffeepot .p-l {
+    padding-left: 1rem !important; }
+  .coffeepot .p-x {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important; }
+  .coffeepot .p-y {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important; }
+  .coffeepot .p-a-md {
+    padding: 1.5rem !important; }
+  .coffeepot .p-t-md {
+    padding-top: 1.5rem !important; }
+  .coffeepot .p-r-md {
+    padding-right: 1.5rem !important; }
+  .coffeepot .p-b-md {
+    padding-bottom: 1.5rem !important; }
+  .coffeepot .p-l-md {
+    padding-left: 1.5rem !important; }
+  .coffeepot .p-x-md {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important; }
+  .coffeepot .p-y-md {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important; }
+  .coffeepot .p-a-lg {
+    padding: 3rem !important; }
+  .coffeepot .p-t-lg {
+    padding-top: 3rem !important; }
+  .coffeepot .p-r-lg {
+    padding-right: 3rem !important; }
+  .coffeepot .p-b-lg {
+    padding-bottom: 3rem !important; }
+  .coffeepot .p-l-lg {
+    padding-left: 3rem !important; }
+  .coffeepot .p-x-lg {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important; }
+  .coffeepot .p-y-lg {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important; }
+  .coffeepot .pos-f-t {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; }
+  .coffeepot .hidden-xs-up {
+    display: none !important; }
+  @media (max-width: 33.9em) {
+    .coffeepot .hidden-xs-down {
+      display: none !important; } }
+  @media (min-width: 34em) {
+    .coffeepot .hidden-sm-up {
+      display: none !important; } }
+  @media (max-width: 47.9em) {
+    .coffeepot .hidden-sm-down {
+      display: none !important; } }
+  @media (min-width: 48em) {
+    .coffeepot .hidden-md-up {
+      display: none !important; } }
+  @media (max-width: 61.9em) {
+    .coffeepot .hidden-md-down {
+      display: none !important; } }
+  @media (min-width: 62em) {
+    .coffeepot .hidden-lg-up {
+      display: none !important; } }
+  @media (max-width: 74.9em) {
+    .coffeepot .hidden-lg-down {
+      display: none !important; } }
+  @media (min-width: 75em) {
+    .coffeepot .hidden-xl-up {
+      display: none !important; } }
+  .coffeepot .hidden-xl-down {
+    display: none !important; }
+  .coffeepot .visible-print-block {
+    display: none !important; }
+    @media print {
+      .coffeepot .visible-print-block {
+        display: block !important; } }
+  .coffeepot .visible-print-inline {
+    display: none !important; }
+    @media print {
+      .coffeepot .visible-print-inline {
+        display: inline !important; } }
+  .coffeepot .visible-print-inline-block {
+    display: none !important; }
+    @media print {
+      .coffeepot .visible-print-inline-block {
+        display: inline-block !important; } }
+  @media print {
+    .coffeepot .hidden-print .hidden-print {
+      display: none !important; } }
+  .coffeepot body {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400; }
+  .coffeepot #home-page {
+    background-size: cover;
+    background-position: center center;
+    color: inherit;
+    display: block;
+    height: 100vh;
+    position: relative;
+    text-decoration: none; }
+  .coffeepot #home-page .title {
+    background-color: white;
+    font-size: 60px;
+    height: 200px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -200px;
+    padding: 50px 5px;
+    position: absolute;
+    top: 50vh;
+    width: 200px; }
+  @media (max-width: 47.9em) {
+    .coffeepot #home-page .title {
+      top: 5vh;
+      margin-top: 0px; }
+    .coffeepot #home-page .content-container {
+      top: 5vh;
+      margin-top: 200px; } }
+  .coffeepot #home-page .title img {
+    width: 85%;
+    height: auto; }
+  .coffeepot #home-page .title .head {
+    color: #333333; }
+  .coffeepot #home-page .title .queue {
+    color: #BB0000; }
+  .coffeepot #home-page .content-container {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: 64px;
+    position: absolute;
+    top: 55vh;
+    width: 80px; }
+    .coffeepot #home-page .content-container .content {
+      color: white;
+      margin-bottom: 15px;
+      margin-left: -135px;
+      margin-top: 15px;
+      width: 350px; }
+  .coffeepot #home-page .arrow-container {
+    bottom: 1vh;
+    left: 0px;
+    position: absolute;
+    right: 0px; }
+  .coffeepot #home-page .arrow {
+    color: white;
+    font-size: 70px;
+    width: auto;
+    height: auto;
+    opacity: 0.6;
+    text-decoration: none; }
+  .coffeepot #home-page .arrow:hover {
+    opacity: 0.8; }
+  .coffeepot #banner .container-fluid {
+    color: white;
+    background-size: cover;
+    background-position: center 90%; }
+  .coffeepot #banner .easingslider {
+    position: absolute !important;
+    left: 0px;
+    right: 0px; }
+  @media (max-width: 47.9em) {
+    .coffeepot #banner .container-fluid {
+      padding-top: 20px;
+      padding-bottom: 175px; } }
+  @media (min-width: 48em) {
+    .coffeepot #banner .container-fluid {
+      padding-top: 69px;
+      padding-bottom: 215px; } }
+  .coffeepot #banner .title {
+    font-size: 80px;
+    text-align: right;
+    margin-top: 2rem;
+    position: relative; }
+  .coffeepot #banner .title img {
+    height: 90px;
+    width: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px; }
+  @media (max-width: 47.9em) {
+    .coffeepot #banner .title {
+      text-align: left;
+      border-bottom: 1px solid white; }
+    .coffeepot #banner .title img {
+      position: static; } }
+  .coffeepot #banner .separator {
+    background-color: white;
+    margin-top: 30px;
+    height: 100px;
+    width: 1px; }
+  .coffeepot #banner .title a {
+    color: inherit;
+    text-decoration: none;
+    padding-right: 2rem; }
+  .coffeepot #banner .subtitle {
+    font-size: smaller; }
+  .coffeepot #banner .subtitle,
+  .coffeepot #banner .content {
+    padding-left: 0px; }
+  .coffeepot #menu {
+    background-color: white;
+    height: 160px;
+    margin: -160px 0px 0px 0px;
+    position: absolute;
+    left: 0px;
+    right: 0px; }
+  .coffeepot #menu .container {
+    margin-left: auto;
+    margin-right: auto; }
+  @media (max-width: 47.9em) {
+    .coffeepot #menu {
+      padding: 0px; } }
+  @media (min-width: 48em) {
+    .coffeepot #menu {
+      padding: 0px 25%; } }
+  .coffeepot #page {
+    padding: 0px 30px 30px 30px; }
+  .coffeepot #content {
+    padding-top: 20px;
+    border-top: 1px solid #BB0000; }
+  .coffeepot .entry h1,
+  .coffeepot .entry h2 {
+    color: #BB0000;
+    font-weight: 500; }
+  .coffeepot .entry h2,
+  .coffeepot .entry h3 {
+    font-size: large; }
+  .coffeepot .entry h4,
+  .coffeepot .entry h5,
+  .coffeepot .entry h6 {
+    font-size: medium; }
+  .coffeepot .entry .colorized {
+    color: #BB0000; }
+  .coffeepot .button-collapse {
+    border-top: 1px solid #BB0000;
+    text-align: center;
+    color: #BB0000; }
+  .coffeepot .button-collapse .arrows * {
+    font-weight: bold;
+    font-size: 60px;
+    height: auto;
+    width: auto; }
+  .coffeepot .button-collapse .collapsed * {
+    margin-top: -23px; }
+  .coffeepot .button-collapse .arrows:hover {
+    cursor: pointer;
+    color: #ee0000; }
+  .coffeepot .button-collapse .down,
+  .coffeepot .button-collapse .collapsed .up {
+    display: none; }
+  .coffeepot .button-collapse .collapsed .down {
+    display: inline-block; }
+  .coffeepot #gmap {
+    position: relative;
+    margin: 0px auto 30px auto;
+    max-width: 700px; }
+  .coffeepot #gmap .panel {
+    background-color: rgba(187, 0, 0, 0.6);
+    border-style: none;
+    bottom: 0px;
+    color: white;
+    margin: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    max-width: 40%;
+    min-width: 200px !important;
+    text-overflow: ellipsis;
+    z-index: 10; }
+  @media (max-width: 47.9em) {
+    .coffeepot #gmap .panel {
+      position: static;
+      max-width: none; } }
+  .coffeepot #gmap .panel .title {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    width: 20px; }

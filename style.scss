@@ -1,0 +1,313 @@
+/*
+Theme Name: BBCH CoffeePot
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: CoffeePot
+Author URI: http://coffeepot.fr
+Description: Simple red and white theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: New York,red,black,white
+Text Domain: coffeepot_bbch
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import "bootstrap/scss/bootstrap";
+@import "variables";
+
+body {
+  font-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#home-page {
+  background-size: cover;
+  background-position: center center;
+  color: inherit;
+  display: block;
+  height: 100vh;
+  position: relative;
+  text-decoration: none;
+}
+
+#home-page .title {
+  $width: 200px;
+  $height: $width;
+  background-color: $white;
+  font-size: 60px;
+  height: $height;
+  left: 50%;
+  margin-left: -($width/2);
+  margin-top: -$height;
+  padding: 50px 5px;
+  position: absolute;
+  top: 50vh;
+  width: $width;
+}
+
+@include media-breakpoint-down(sm) {
+  #home-page .title {
+    top: 5vh;
+    margin-top: 0px;
+  }
+
+  #home-page .content-container {
+    top: 5vh;
+    margin-top: 200px;
+  }
+}
+
+#home-page .title img {
+  width: 85%;
+  height: auto;
+}
+
+#home-page .title .head {
+  color: #333333;
+}
+
+#home-page .title .queue {
+  color: $red;
+}
+
+#home-page .content-container {
+  $container_width: 80px;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+  left: 50%;
+  margin-left: -($container_width/2);
+  margin-top: 64px;
+  position: absolute;
+  top: 55vh;
+  width: $container_width;
+
+  .content {
+    $width: 350px;
+    color: $white;
+    margin-bottom: 15px;
+    margin-left: -($width - $container_width)/2;
+    margin-top: 15px;
+    width: $width;
+  }
+}
+
+#home-page .arrow-container {
+  bottom: 1vh;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+#home-page .arrow {
+  color: $white;
+  font-size: 70px;
+  width: auto;
+  height: auto;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+#home-page .arrow:hover {
+  opacity: 0.8;
+}
+
+#banner .container-fluid {
+  color: $white;
+  background-size: cover;
+  background-position: center 90%;
+}
+
+#banner .easingslider {
+  position: absolute !important;
+  left: 0px;
+  right: 0px;
+}
+
+@include media-breakpoint-down(sm) {
+  #banner .container-fluid {
+    padding-top: 20px;
+    padding-bottom: 175px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #banner .container-fluid {
+    padding-top: 69px;
+    padding-bottom: 215px;
+  }
+}
+
+#banner .title {
+  font-size: 80px;
+  text-align: right;
+  margin-top: 2*$spacer;
+  position: relative;
+}
+
+#banner .title img {
+  height: 90px;
+  width: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@include media-breakpoint-down(sm) {
+  #banner .title {
+    text-align: left;
+    border-bottom: 1px solid $white;
+  }
+
+  #banner .title img {
+    position: static;
+  }
+}
+
+#banner .separator {
+  background-color: $white;
+  margin-top: 30px;
+  height: 100px;
+  width: 1px;
+}
+
+#banner .title a {
+  color: inherit;
+  text-decoration: none;
+  padding-right: 2*$spacer;
+}
+
+#banner .subtitle {
+  font-size: smaller;
+}
+
+#banner .subtitle,
+#banner .content {
+  padding-left: 0px;
+}
+
+#menu {
+  background-color: $white;
+  height: 160px;
+  margin: -160px 0px 0px 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+#menu .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include media-breakpoint-down(sm) {
+  #menu {
+    padding: 0px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #menu {
+    padding: 0px 25%;
+  }
+}
+
+#page {
+  padding: 0px 30px 30px 30px;
+}
+
+#content {
+  padding-top: 20px;
+  border-top: 1px solid $red;
+}
+
+.entry h1,
+.entry h2 {
+  color: $red;
+  font-weight: 500;
+}
+
+.entry h2,
+.entry h3 {
+  font-size: large;
+}
+
+.entry h4,
+.entry h5,
+.entry h6 {
+  font-size: medium;
+}
+
+.entry .colorized {
+  color: $red;
+}
+
+.button-collapse {
+  border-top: 1px solid $red;
+  text-align: center;
+  color: $red;
+}
+
+.button-collapse .arrows * {
+  font-weight: bold;
+  font-size: 60px;
+  height: auto;
+  width: auto;
+}
+
+.button-collapse .collapsed * {
+  margin-top: -23px;
+}
+
+.button-collapse .arrows:hover {
+  cursor: pointer;
+  color: lighten($red, 10%);
+}
+
+.button-collapse .down,
+.button-collapse .collapsed .up {
+  display: none;
+}
+
+.button-collapse .collapsed .down {
+  display: inline-block;
+}
+
+#gmap {
+  position: relative;
+  margin: 0px auto 30px auto;
+  max-width: 700px;
+}
+
+#gmap .panel {
+  background-color: rgba($red, 0.6);
+  border-style: none;
+  bottom: 0px;
+  color: white;
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  max-width: 40%;
+  min-width: 200px !important;
+  text-overflow: ellipsis;
+  z-index: 10;
+}
+
+@include media-breakpoint-down(sm) {
+  #gmap .panel {
+    position: static;
+    max-width: none;
+  }
+}
+
+#gmap .panel .title {
+  border-bottom: 2px solid $white;
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: $spacer / 2;
+  margin-bottom: $spacer;
+  white-space: nowrap;
+  width: 20px;
+}
