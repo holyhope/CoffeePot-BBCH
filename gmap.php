@@ -155,4 +155,4 @@ function coffeepot_bbch_adminbar_simplify_gmap($wp_admin_bar)
     ));
 }
 
-add_action('admin_bar_menu', 'coffeepot_bbch_adminbar_simplify_gmap');
+add_action('admin_bar_menu', 'coffeepot_bbch_adminbar_simplify_gmap', 20);
