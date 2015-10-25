@@ -23,13 +23,17 @@ body {
 }
 
 #home-page {
-  background-size: cover;
-  background-position: center center;
   color: inherit;
   display: block;
   height: 100vh;
   position: relative;
   text-decoration: none;
+}
+
+#home-page .container-fluid {
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
 }
 
 #home-page .title {
@@ -111,6 +115,10 @@ body {
 
 #home-page .arrow:hover {
   opacity: 0.8;
+}
+
+#banner {
+  position: relative;
 }
 
 #banner .container-fluid {

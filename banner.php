@@ -12,8 +12,12 @@ $description_page_title = get_theme_mod('desccription_page_title', 'Our team');
 ?>
 <div id="banner">
     <?php
-    if (($id = get_theme_mod('banner_slider_id')) && ($slider_callback = apply_filters('coffeepot_bbch_banner_slider_callback', false))) {
+    if (($id = get_theme_mod('banner_slider_id')) && ($slider_callback = apply_filters('coffeepot_bbch_slider_callback', false))) {
+        add_filter('easingslider_get_container_styles', 'coffeepot_bbch_easingslider_styles');
+        add_filter('easingslider_get_viewport_styles', 'coffeepot_bbch_easingslider_styles');
         call_user_func($slider_callback, $id);
+        remove_filter('easingslider_get_viewport_styles', 'coffeepot_bbch_easingslider_styles');
+        remove_filter('easingslider_get_container_styles', 'coffeepot_bbch_easingslider_styles');
         ?>
         <header class="container-fluid">
             <div class="container">
@@ -40,11 +44,12 @@ $description_page_title = get_theme_mod('desccription_page_title', 'Our team');
         <?php
     } else {
         ?>
-        <header class="jumbotron m-a-0" id="banner" style="background-image: url('<?php header_image() ?>');">
+        <header class="container-fluid jumbotron m-a-0" style="background-image: url('<?php header_image() ?>');">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-xs-12 col-md-5 title"><a
-                            href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <h1 class="col-xs-12 col-md-5 title"><img
+                            src="<?php echo esc_url(get_theme_mod('page_logo', get_stylesheet_directory_uri() . '/images/logo_white.png')); ?>"/>
+                    </h1>
 
                     <div class="col-md-1 hidden-sm-down">
                         <div class="center-block separator"></div>

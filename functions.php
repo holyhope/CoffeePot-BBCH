@@ -62,17 +62,29 @@ function coffeepot_bbch_adminbar_simplify($wp_admin_bar)
         'title' => __('Banner', 'coffeepot_bbch'),
         'parent' => 'customize',
     ));
-    if (apply_filters('coffeepot_bbch_banner_slider_callback', false) && ($id = get_theme_mod('banner_slider_id'))) {
-        $wp_admin_bar->add_node(array(
-            'id' => 'banner-slider',
-            //=&=`
-            'href' => admin_url('admin.php?' . http_build_query(array(
-                    'page' => 'easingslider_edit_sliders',
-                    'edit' => $id,
-                ), '', '&')),
-            'title' => __('Banner images', 'coffeepot_bbch'),
-            'parent' => 'customize',
-        ));
+    if (apply_filters('coffeepot_bbch_slider_callback', false)) {
+        if ($id = get_theme_mod('banner_slider_id')) {
+            $wp_admin_bar->add_node(array(
+                'id' => 'banner-slider',
+                'href' => admin_url('admin.php?' . http_build_query(array(
+                        'page' => 'easingslider_edit_sliders',
+                        'edit' => $id,
+                    ), '', '&')),
+                'title' => __('Banner images', 'coffeepot_bbch'),
+                'parent' => 'customize',
+            ));
+        }
+        if ($id = get_theme_mod('front_slider_id')) {
+            $wp_admin_bar->add_node(array(
+                'id' => 'banner-slider',
+                'href' => admin_url('admin.php?' . http_build_query(array(
+                        'page' => 'easingslider_edit_sliders',
+                        'edit' => $id,
+                    ), '', '&')),
+                'title' => __('Landing images', 'coffeepot_bbch'),
+                'parent' => 'customize',
+            ));
+        }
     }
 }
 
@@ -116,6 +128,21 @@ function coffeepot_bbch_customize_tagline($wp_customize)
         'section' => 'title_tagline',
         'settings' => 'front_image',
     )));
+    if (apply_filters('coffeepot_bbch_slider_callback', false)) {
+        $wp_customize->add_setting('front_slider_id', array(
+            'default' => '',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'absint',
+        ));
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'front_slider_id', array(
+            'type' => 'number',
+            'label' => __('Slider', 'coffeepot_bbch'),
+            'section' => 'title_tagline',
+            'settings' => 'front_slider_id',
+            'priority' => 1,
+        )));
+        $wp_customize->remove_section('header_image');
+    }
 }
 
 add_action('customize_register', 'coffeepot_bbch_customize_tagline');
@@ -163,7 +190,8 @@ can make.',
         'settings' => 'desccription_page_content',
         'priority' => 3,
     )));
-    if (apply_filters('coffeepot_bbch_banner_slider_callback', false)) {
+    $wp_customize->get_control('header_image')->section = 'banner';
+    if (apply_filters('coffeepot_bbch_slider_callback', false)) {
         $wp_customize->add_setting('banner_slider_id', array(
             'default' => '',
             'transport' => 'refresh',
@@ -177,8 +205,6 @@ can make.',
             'priority' => 1,
         )));
         $wp_customize->remove_section('header_image');
-    } else {
-        $wp_customize->get_control('header_image')->section = 'banner';
     }
 }
 
@@ -189,14 +215,22 @@ function coffeepot_bbch_slider_easyslider($exists)
     return $exists ? $exists : (function_exists('easingslider') ? 'easingslider' : false);
 }
 
-add_filter('coffeepot_bbch_banner_slider_callback', 'coffeepot_bbch_slider_easyslider', 10);
+add_filter('coffeepot_bbch_slider_callback', 'coffeepot_bbch_slider_easyslider', 10);
+
+function coffeepot_bbch_easingslider_styles($styles)
+{
+    return 'height:100%;' . preg_replace(array(
+        '/max-height:[^;]*;/',
+        '/height:[^;]*;/'
+    ), '', $styles);
+}
 
 function coffeepot_bbch_slider_wowslider($exists)
 {
     return $exists ? $exists : (function_exists('wowslider') ? 'wowslider' : false);
 }
 
-add_filter('coffeepot_bbch_banner_slider_callback', 'coffeepot_bbch_slider_wowslider', 30);
+add_filter('coffeepot_bbch_slider_callback', 'coffeepot_bbch_slider_wowslider', 30);
 
 function coffeepot_bbch_customize_theme_variants($wp_customize)
 {
