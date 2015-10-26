@@ -5853,18 +5853,6 @@ body {
   right: 0px;
 }
 
-@media (max-width: 47.9em) {
-  #banner .container-fluid {
-    padding-top: 20px;
-    padding-bottom: 175px;
-  }
-}
-@media (min-width: 48em) {
-  #banner .container-fluid {
-    padding-top: 69px;
-    padding-bottom: 215px;
-  }
-}
 #banner .title {
   font-size: 80px;
   text-align: right;
@@ -6032,4 +6020,9 @@ body {
   margin-bottom: 1rem;
   white-space: nowrap;
   width: 20px;
+}
+
+#footer .copyrights {
+  font-style: italic;
+  text-align: right;
 }

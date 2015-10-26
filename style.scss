@@ -133,20 +133,6 @@ body {
   right: 0px;
 }
 
-@include media-breakpoint-down(sm) {
-  #banner .container-fluid {
-    padding-top: 20px;
-    padding-bottom: 175px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  #banner .container-fluid {
-    padding-top: 69px;
-    padding-bottom: 215px;
-  }
-}
-
 #banner .title {
   font-size: 80px;
   text-align: right;
@@ -318,4 +304,9 @@ body {
   margin-bottom: $spacer;
   white-space: nowrap;
   width: 20px;
+}
+
+#footer .copyrights {
+  font-style: italic;
+  text-align: right;
 }

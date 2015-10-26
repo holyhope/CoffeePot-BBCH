@@ -12,6 +12,8 @@ function coffeepot_bbch_enqueue()
     wp_enqueue_style('core', get_stylesheet_uri(), false);
     wp_enqueue_style('override', get_template_directory_uri() . '/override.css', false);
     wp_enqueue_style('dashicons');
+
+    wp_add_inline_style('core', '#banner .container-fluid{height:' . get_theme_mod('banner_height', 400) . 'px}');
 }
 
 add_action('wp_enqueue_scripts', 'coffeepot_bbch_enqueue');
@@ -42,38 +44,32 @@ function coffeepot_bbch_setup_simplify()
 
 add_action('after_setup_theme', 'coffeepot_bbch_setup_simplify');
 
+function coffeepot_bbch_footer_copyrights()
+{
+    ?>
+    <div
+        class="container copyrights"><?php
+        echo esc_html(get_theme_mod('footer_copyrights', __('Made by CoffeePot', 'coffeepot_bbch')));
+        ?></div>
+    <?php
+}
+
+add_action('wp_footer', 'coffeepot_bbch_footer_copyrights', 30);
+
 function coffeepot_bbch_adminbar_simplify($wp_admin_bar)
 {
+    $slider_callback_exists = (bool)apply_filters('coffeepot_bbch_slider_callback', false);
+
     $wp_admin_bar->add_node(array(
         'id' => 'front-page',
         'href' => admin_url('customize.php?' . http_build_query(array(
                 'return' => $_SERVER['REQUEST_URI'],
                 'autofocus[section]' => 'title_tagline',
             ), '', '&')),
-        'title' => __('Front page', 'coffeepot_bbch'),
+        'title' => __('Landing page', 'coffeepot_bbch'),
         'parent' => 'customize',
     ));
-    $wp_admin_bar->add_node(array(
-        'id' => 'banner',
-        'href' => admin_url('customize.php?' . http_build_query(array(
-                'return' => $_SERVER['REQUEST_URI'],
-                'autofocus[section]' => 'banner',
-            ), '', '&')),
-        'title' => __('Banner', 'coffeepot_bbch'),
-        'parent' => 'customize',
-    ));
-    if (apply_filters('coffeepot_bbch_slider_callback', false)) {
-        if ($id = get_theme_mod('banner_slider_id')) {
-            $wp_admin_bar->add_node(array(
-                'id' => 'banner-slider',
-                'href' => admin_url('admin.php?' . http_build_query(array(
-                        'page' => 'easingslider_edit_sliders',
-                        'edit' => $id,
-                    ), '', '&')),
-                'title' => __('Banner images', 'coffeepot_bbch'),
-                'parent' => 'customize',
-            ));
-        }
+    if ($slider_callback_exists) {
         if ($id = get_theme_mod('front_slider_id')) {
             $wp_admin_bar->add_node(array(
                 'id' => 'banner-slider',
@@ -86,6 +82,37 @@ function coffeepot_bbch_adminbar_simplify($wp_admin_bar)
             ));
         }
     }
+    $wp_admin_bar->add_node(array(
+        'id' => 'banner',
+        'href' => admin_url('customize.php?' . http_build_query(array(
+                'return' => $_SERVER['REQUEST_URI'],
+                'autofocus[section]' => 'banner',
+            ), '', '&')),
+        'title' => __('Banner', 'coffeepot_bbch'),
+        'parent' => 'customize',
+    ));
+    if ($slider_callback_exists) {
+        if ($id = get_theme_mod('banner_slider_id')) {
+            $wp_admin_bar->add_node(array(
+                'id' => 'banner-slider',
+                'href' => admin_url('admin.php?' . http_build_query(array(
+                        'page' => 'easingslider_edit_sliders',
+                        'edit' => $id,
+                    ), '', '&')),
+                'title' => __('Banner images', 'coffeepot_bbch'),
+                'parent' => 'customize',
+            ));
+        }
+    }
+    $wp_admin_bar->add_node(array(
+        'id' => 'map-footer',
+        'href' => admin_url('customize.php?' . http_build_query(array(
+                'return' => $_SERVER['REQUEST_URI'],
+                'autofocus[section]' => 'footer',
+            ), '', '&')),
+        'title' => __('Footer', 'coffeepot_bbch'),
+        'parent' => 'customize',
+    ));
 }
 
 add_action('admin_bar_menu', 'coffeepot_bbch_adminbar_simplify');
@@ -168,7 +195,6 @@ function coffeepot_bbch_customize_banner($wp_customize)
     $wp_customize->add_setting('desccription_page_title', array(
         'default' => 'Our team',
         'transport' => 'refresh',
-        'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'desccription_page_title', array(
         'label' => __('Description title for pages', 'coffeepot_bbch'),
@@ -189,6 +215,16 @@ can make.',
         'section' => 'banner',
         'settings' => 'desccription_page_content',
         'priority' => 3,
+    )));
+    $wp_customize->add_setting('banner_height', array(
+        'default' => 400,
+        'transport' => 'refresh',
+        'sanitize_callback' => 'intval',
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner_height', array(
+        'label' => __('Height (pixel)', 'coffeepot_bbch'),
+        'section' => 'banner',
+        'settings' => 'banner_height',
     )));
     $wp_customize->get_control('header_image')->section = 'banner';
     if (apply_filters('coffeepot_bbch_slider_callback', false)) {
@@ -231,6 +267,28 @@ function coffeepot_bbch_slider_wowslider($exists)
 }
 
 add_filter('coffeepot_bbch_slider_callback', 'coffeepot_bbch_slider_wowslider', 30);
+
+
+function coffeepot_bbch_customize_footer($wp_customize)
+{
+    $wp_customize->add_section('footer', array(
+        'title' => __('Footer', 'coffeepot_bbch'),
+        'priority' => 100,
+        'description' => __('Customize Google Map displayed on the bottom of the page', 'coffeepot_bbch'),
+    ));
+    $wp_customize->add_setting('footer_copyrights', array(
+        'default' => __('Made by CoffeePot', 'coffeepot_bbch'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'footer_copyrights', array(
+        'label' => __('Copyrights', 'coffeepot_bbch'),
+        'section' => 'footer',
+        'settings' => 'footer_copyrights',
+        'priority' => 1,
+    )));
+}
+
+add_action('customize_register', 'coffeepot_bbch_customize_footer', 7);
 
 function coffeepot_bbch_customize_theme_variants($wp_customize)
 {

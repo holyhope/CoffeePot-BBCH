@@ -19,7 +19,7 @@ $description_page_title = get_theme_mod('desccription_page_title', 'Our team');
         remove_filter('easingslider_get_viewport_styles', 'coffeepot_bbch_easingslider_styles');
         remove_filter('easingslider_get_container_styles', 'coffeepot_bbch_easingslider_styles');
         ?>
-        <header class="container-fluid">
+        <header class="container-fluid jumbotron">
             <div class="container">
                 <div class="row">
                     <h1 hidden class="col-xs-12 col-md-5 title"><a

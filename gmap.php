@@ -6,11 +6,6 @@
 
 function coffeepot_bbch_customize_gmap($wp_customize)
 {
-    $wp_customize->add_section('map_footer', array(
-        'title' => __('Maps customization', 'coffeepot_bbch'),
-        'priority' => 100,
-        'description' => __('Customize Google Map displayed on the bottom of the page', 'coffeepot_bbch'),
-    ));
     /*
     $wp_customize->add_setting('gmap_api_key', array(
         'default' => '',
@@ -18,7 +13,7 @@ function coffeepot_bbch_customize_gmap($wp_customize)
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_api_key', array(
         'label' => __('Google Map API key', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_api_key',
     )));
     $wp_customize->add_setting('gmap_position', array(
@@ -27,7 +22,7 @@ function coffeepot_bbch_customize_gmap($wp_customize)
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_position', array(
         'label' => __('Position', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_position',
     )));
     */
@@ -37,7 +32,7 @@ function coffeepot_bbch_customize_gmap($wp_customize)
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_panel_title', array(
         'label' => __('Panel title', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_panel_title',
     )));
     $wp_customize->add_setting('gmap_panel_content', array(
@@ -49,7 +44,7 @@ London WC2R 3BD',
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_panel_content', array(
         'type' => 'textarea',
         'label' => __('Panel content', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_panel_content',
     )));
     $wp_customize->add_setting('gmap_latitude', array(
@@ -60,7 +55,7 @@ London WC2R 3BD',
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_latitude', array(
         'type' => 'number',
         'label' => __('Latitude', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_latitude',
     )));
     $wp_customize->add_setting('gmap_longitude', array(
@@ -71,7 +66,7 @@ London WC2R 3BD',
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_longitude', array(
         'type' => 'number',
         'label' => __('Longitude', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_longitude',
     )));
     $wp_customize->add_setting('gmap_height', array(
@@ -82,17 +77,17 @@ London WC2R 3BD',
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'gmap_height', array(
         'type' => 'number',
         'label' => __('Height (pixel)', 'coffeepot_bbch'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_height',
     )));
     $wp_customize->add_setting('gmap_marker', array(
-        'default' => $template_directory . '/images/marker_gmap.png',
+        'default' => get_stylesheet_directory_uri() . '/images/marker_gmap.png',
         'transport' => 'refresh',
         'sanitize_callback' => 'esc_url_raw',
     ));
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gmap_marker', array(
         'label' => __('Marker', 'theme_name'),
-        'section' => 'map_footer',
+        'section' => 'footer',
         'settings' => 'gmap_marker',
     )));
 }
@@ -140,19 +135,3 @@ London WC2R 3BD'))); ?></div>
 }
 
 add_action('wp_footer', 'coffeepot_bbch_footer_gmap');
-
-
-function coffeepot_bbch_adminbar_simplify_gmap($wp_admin_bar)
-{
-    $wp_admin_bar->add_node(array(
-        'id' => 'map-footer',
-        'href' => admin_url('customize.php?' . http_build_query(array(
-                'return' => $_SERVER['REQUEST_URI'],
-                'autofocus[section]' => 'map_footer',
-            ), '', '&')),
-        'title' => __('Footer map', 'coffeepot_bbch'),
-        'parent' => 'customize',
-    ));
-}
-
-add_action('admin_bar_menu', 'coffeepot_bbch_adminbar_simplify_gmap', 20);
